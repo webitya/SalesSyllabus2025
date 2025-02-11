@@ -1,0 +1,11 @@
+.hero-section {
+  background-color: #007BFF;
+; /* Light background for fallback */
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+}
+
+/* Additional responsive design adjustments */
+
