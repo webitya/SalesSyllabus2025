@@ -9,16 +9,20 @@ const NavbarEl3 = () => {
   const menus = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about-us" },
-    { label: "Market Analysis", href: "/market-analysis" },
-    { label: "Marketing Communication", href: "/marketing-communication" },
+    // { label: "Market Analysis", href: "/market-analysis" },
+    // { label: "Marketing Communication", href: "/marketing-communication" },
     // { label: "Content Marketing ", href: "/content-marketing" },
-    { label: "Reporting Framework", href: "/Sales-framework" },
+    // { label: "Reporting Framework", href: "/Sales-framework" },
   ];
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
   const [isResourcesOpen1, setIsResourcesOpen1] = useState(false);
+  const [isResourcesOpen3, setIsResourcesOpen3] = useState(false);
+  const [isResourcesOpen4, setIsResourcesOpen4] = useState(false);
+  const [isResourcesOpen5, setIsResourcesOpen5] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => setIsSticky(window.scrollY > 150);
@@ -79,6 +83,58 @@ const NavbarEl3 = () => {
               </div>
             )}
           </div>
+          {/* ========================= */}
+          {/* Resources Dropdown 3 */}
+          <div
+            className="dropdown"
+            onMouseEnter={() => setIsResourcesOpen3(true)}
+            onMouseLeave={() => setIsResourcesOpen3(false)}
+          >
+            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Resources <DownOutlined style={{fontSize:"13px"}}/></span>
+            {isResourcesOpen3 && (
+              <div className="dropdown-menu">
+                <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
+                <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
+                <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
+                <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink>
+              </div>
+            )}
+          </div>
+          {/* ========================= */}
+          {/* Resources Dropdown 4 */}
+          <div
+            className="dropdown"
+            onMouseEnter={() => setIsResourcesOpen4(true)}
+            onMouseLeave={() => setIsResourcesOpen4(false)}
+          >
+            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Resources <DownOutlined style={{fontSize:"13px"}}/></span>
+            {isResourcesOpen4 && (
+              <div className="dropdown-menu">
+                <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
+                <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
+                <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
+                <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink>
+              </div>
+            )}
+          </div>
+          {/* ========================= */}
+          {/* Resources Dropdown 5*/}
+          <div
+            className="dropdown"
+            onMouseEnter={() => setIsResourcesOpen5(true)}
+            onMouseLeave={() => setIsResourcesOpen5(false)}
+          >
+            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Resources <DownOutlined style={{fontSize:"13px"}}/></span>
+            {isResourcesOpen5 && (
+              <div className="dropdown-menu">
+                <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
+                <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
+                <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
+                <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink>
+              </div>
+            )}
+          </div>
+          {/* ========================= */}
           {/* ===========Addons======== */}
           <div
             className="dropdown mr-6"
@@ -93,6 +149,7 @@ const NavbarEl3 = () => {
             )}
           </div>
           {/* ========================= */}
+           
 
           <Link to="https://calendly.com/salessyllabus" target="_blank">
       <Button
