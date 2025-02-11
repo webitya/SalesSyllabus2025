@@ -8,7 +8,7 @@ import "./NavbarEl3.css";
 const NavbarEl3 = () => {
   const menus = [
     { label: "Home", href: "/" },
-    { label: "About Us", href: "/about-us" },
+    // { label: "About Us", href: "/about-us" },
     // { label: "Market Analysis", href: "/market-analysis" },
     // { label: "Marketing Communication", href: "/marketing-communication" },
     // { label: "Content Marketing ", href: "/content-marketing" },
@@ -73,13 +73,13 @@ const NavbarEl3 = () => {
             onMouseEnter={() => setIsResourcesOpen(true)}
             onMouseLeave={() => setIsResourcesOpen(false)}
           >
-            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Resources <DownOutlined style={{fontSize:"13px"}}/></span>
+            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Research Services <DownOutlined style={{fontSize:"13px"}}/></span>
             {isResourcesOpen && (
               <div className="dropdown-menu">
-                <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
-                <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
-                <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
-                <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink>
+                <NavLink to="/faqs" className="dropdown-item">Market Analysis</NavLink>
+                <NavLink to="/case-studies" className="dropdown-item">Marketing Communication Strategy</NavLink>
+                <NavLink to="/blog" className="dropdown-item">Community Building</NavLink>
+                <NavLink to="/free-resources" className="dropdown-item">Reporting Framework Developement</NavLink>
               </div>
             )}
           </div>
@@ -90,13 +90,13 @@ const NavbarEl3 = () => {
             onMouseEnter={() => setIsResourcesOpen3(true)}
             onMouseLeave={() => setIsResourcesOpen3(false)}
           >
-            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Resources <DownOutlined style={{fontSize:"13px"}}/></span>
+            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Sales Team Building <DownOutlined style={{fontSize:"13px"}}/></span>
             {isResourcesOpen3 && (
               <div className="dropdown-menu">
-                <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
-                <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
-                <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
-                <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink>
+                <NavLink to="/faqs" className="dropdown-item">Leadership Hiring & Mentoring</NavLink>
+                <NavLink to="/case-studies" className="dropdown-item">Master Class</NavLink>
+                <NavLink to="/blog" className="dropdown-item">Interview as a services</NavLink>
+                {/* <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink> */}
               </div>
             )}
           </div>
@@ -107,13 +107,13 @@ const NavbarEl3 = () => {
             onMouseEnter={() => setIsResourcesOpen4(true)}
             onMouseLeave={() => setIsResourcesOpen4(false)}
           >
-            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Resources <DownOutlined style={{fontSize:"13px"}}/></span>
+            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Sales Team Management Service <DownOutlined style={{fontSize:"13px"}}/></span>
             {isResourcesOpen4 && (
               <div className="dropdown-menu">
-                <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
-                <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
+                <NavLink to="/faqs" className="dropdown-item">Sales & Marketing War Room</NavLink>
+                {/* <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
                 <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
-                <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink>
+                <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink> */}
               </div>
             )}
           </div>
@@ -136,7 +136,7 @@ const NavbarEl3 = () => {
           </div>
           {/* ========================= */}
           {/* ===========Addons======== */}
-          <div
+          {/* <div
             className="dropdown mr-6"
             onMouseEnter={() => setIsResourcesOpen1(true)}
             onMouseLeave={() => setIsResourcesOpen1(false)}
@@ -147,7 +147,7 @@ const NavbarEl3 = () => {
                 <NavLink to="/content-marketing" className="dropdown-item text-sm">Content Marketing</NavLink>
               </div>
             )}
-          </div>
+          </div> */}
           {/* ========================= */}
            
 
