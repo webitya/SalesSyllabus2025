@@ -69,7 +69,8 @@ const A2BusinessPlanPage = () => {
  Build a competitive edge.
           </p> */}
            <div>
-            <h2 className="text-3xl text-center mb-5">The Importance of Market Analysis for Business Transformation</h2>
+            <h2 className="text-3xl text-center mb-5"> Business transformation to marketing and sales success
+            </h2>
            
             {/* == */}
             <p className="text-base md:text-lg text-gray-700 mb-2">
@@ -78,7 +79,7 @@ const A2BusinessPlanPage = () => {
             {/* === */}
     
     <p className="text-base md:text-lg text-gray-700 mb-2">
-            AThrough comprehensive research and advanced analytical tools, we provide actionable 
+            with through comprehensive research and advanced analytical tools, we provide actionable 
             insights that empower businesses to :
           </p>
     <p className="text-gray-700 text-lg leading-relaxed">

@@ -19,7 +19,7 @@ const A2StatCallToAction = () => {
             size="large"
             className="bg-yellow-500 hover:bg-yellow-600 text-black font-medium py-3 px-8 rounded-lg shadow-lg transition duration-300"
           >
-            Let's Builds Your Strategy
+            Lets build your communication strategy
           </Button>
         </Link>
       </div>

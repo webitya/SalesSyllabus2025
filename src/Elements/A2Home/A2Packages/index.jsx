@@ -74,7 +74,7 @@ const BusinessTransformation = () => {
           ))}
         </div>
       </div>
-      <A2ContentMarketingPackage/>
+      {/* <A2ContentMarketingPackage/> */}
     </div>
   );
 };

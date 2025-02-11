@@ -8,8 +8,7 @@ const CallToAction = () => {
     <div className="w-full py-20 bg-blue-800 text-white">
       <div className="mx-auto px-4 text-center">
         <h2 className="text-xl  mb-6">Market analysis is not just about understanding your market—it's about translating 
-insights into strategic actions that drive results. Let Sales Syllabus guide your business 
-planning with the clarity and confidence that comes from data-backed decisions.</h2>
+insights into strategic actions that drive results. Let Sales Syllabus guide your business planning with the clarity and confidence that comes from data-backed decisions Let sales syllabus find your high paying customer segment</h2>
         <p className="text-sm mb-8">
           Ready to drive strategic growth with data-driven insights? Partner with us to shape your future with informed, actionable business plans.
         </p>

@@ -20,10 +20,12 @@ const HeroSection = () => {
         {/* Left Section - Text and Call to Action */}
         <div className="md:w-1/2 text-left md:pr-1 animate__animated animate__fadeInLeft">
           <h1 className="text-3xl md:text-3xl font-bold text-white leading-tight mb-6">
-          Empowering Businesses through Transformative Frameworks 
+          Empowering businesses with actionable marketinsights and intelligence.
           </h1>
           <p className="text-lg md:text-xl text-white mb-8">
-          Sales Syllabus Pro is a proprietary framework developed through in-house research and testing with over 100 companies.
+          Empowering companies to maximize ROI on their sales and marketing investments through data-driven insights and
+strategies.
+
           </p>
           <ScrollLink to="whatwedo" smooth={true} duration={500} offset={-70}>
           <Button

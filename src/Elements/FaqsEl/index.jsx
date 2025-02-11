@@ -23,7 +23,9 @@ const FAQPageEl = () => {
             className="bg-blue-50"
           >
             <p className="text-base">
-            We provide strategic consulting services aimed at transforming business performance. Our focus is on enhancing three core pillars of your organization: business planning, marketing execution, and sales execution. Explore our individual service pages to learn more about how we drive impactful transformation
+            We provide expert consulting services to help companies build and manage high-performing sales and marketing teams,
+driving improved ROI.
+
 
             </p>
           </Panel>
@@ -58,7 +60,9 @@ const FAQPageEl = () => {
             className="bg-yellow-50"
           >
             <p className="text-base">
-              Our Performance Management system is designed to help your team meet their objectives through measurable KPIs and continuous feedback, ultimately driving success.
+            Our framework is designed to help your team meet their objectives through measurable KPIs and continuous
+feedback, ultimately driving success.
+
             </p>
           </Panel>
           <Panel 

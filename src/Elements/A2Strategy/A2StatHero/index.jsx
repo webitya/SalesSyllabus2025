@@ -76,7 +76,8 @@ const HeroSection = () => {
             Marketing Communication
           </h1>
           <p className="text-lg text-gray-200 mb-6 animate__animated animate__fadeIn">
-          Marketing communication is a key enabler in navigating business transformation, as it helps manage internal and external perceptions, aligns stakeholders, and builds lasting relationships with customers.
+          Marketing communication is a key enablerin navigating business transformation, marketing sucess, as it helps
+manage internal and external perceptions, aligns stakeholders, and builds lasting relationships with customers
           </p>
           
           <ScrollLink to="info1" smooth={true} duration={500} offset={-70}>

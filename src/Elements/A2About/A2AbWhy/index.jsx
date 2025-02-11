@@ -38,11 +38,12 @@ const AboutWhoWeAre = () => {
       <Row gutter={[16, 16]} className="mx-auto px-4 lg:px-10">
         {/* Content Column */}
         <Col xs={24} md={12}>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Who We Are</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Who We Are ?</h2>
           <p className="text-base md:text-lg text-gray-700 mb-6">
-            At Sales Syllabus, we specialize in creating business transformation frameworks that empower organizations
-            to achieve sustainable growth and measurable success. With over seven years of dedicated experience, we
-            have honed a proven system that aligns and optimizes your sales and marketing functions.
+          At Sales Syllabus, we help organizations build and manage sales teams scientifically, ensuring maximum ROI. Managing a
+high-performing sales team effectively is a major challenge, and with over seven years of expertise, we have developed a
+proven system that strategically aligns and optimizes sales and marketing functions for sustainable growth.
+
           </p>
         </Col>
 

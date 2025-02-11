@@ -82,7 +82,8 @@ const HeroSection = () => {
               icon={<LineChartOutlined />}
               className="transition duration-300 ease-in-out hover:bg-blue-700 hover:border-blue-700 bg-gradient-to-r from-green-400 to-blue-500 text-white font-semibold py-3 px-6 rounded-full transform hover:scale-105 shadow-xl"
             >
-              Schedule Your Meeting Now
+               Build yourreporting framework
+
             </Button>
           </Link>
         </div>

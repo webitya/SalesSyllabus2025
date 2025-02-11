@@ -50,11 +50,14 @@ const A2Company = () => {
         100+ Top Companies Trust Us
       </h1>
   <p className="trusted-description text-center text-lg text-gray-600 mb-1">
-  Sales Syllabus is a premium business consulting company specializing in achieving business transformation by optimizing sales and marketing functions. Through the implementation of our in-house Sales Syllabus Pro Framework, we enable entire sales and marketing teams to deliver measurable and impactful outcomes.
+  ales Syllabus is a premium business consulting firm specializing in building and managing highperformance sales and marketing teams using scientific approach. Our servies  is trusted by lea
+companies worldwide for its innovation, reliability, and proven results. By implementing our solutions,
+organizations can scale revenue by fostering a result-oriented sales and marketing team.
+
       </p>
-  <p className="trusted-description text-center text-lg text-gray-600 mb-3">
+  {/* <p className="trusted-description text-center text-lg text-gray-600 mb-3">
         <span className="font-bold text-zinc-600">Our framework</span> is trusted by leading companies around the globe for its innovation, reliability, and results.
-      </p>
+      </p> */}
       <div className="logo-container max-w-6xl mx-auto">
         <Slider {...settings}>
           {companyLogos.map((company, index) => (

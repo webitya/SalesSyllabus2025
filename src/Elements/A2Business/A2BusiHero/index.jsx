@@ -110,7 +110,9 @@ const MarketAnalysisHero = () => {
         <span className='text-4xl md:text-4xl font-bold  '>Market Analysis</span> <p className='text-xl  py-3 italic'> </p>
         </Title>
         <p className="text-lg md:text-xl text-white mb-8">
-        Market analysis is the foundation of business transformation, helping identify high-value customer segments that align with your company’s offerings. By pinpointing these segments, businesses can tailor their strategies to attract and serve the most profitable customers effectively.
+        Market analysis is the foundation of business transformation sales and marketing sucess helping <span className='text-yellow-400'>identify high-value customer segments</span> that align with your company’s offerings. By pinpointing these segments,
+businesses can tailortheir strategies to attract and serve the most profitable customers effectively.
+
           </p>
         <Paragraph className="text-lg md:text-xl mb-6 text-gray-200 animate__animated animate__slideInLeft animate__delay-0.5s">
     

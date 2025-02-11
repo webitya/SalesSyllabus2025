@@ -7,20 +7,20 @@ const HomeFAQSection = () => {
   const faqs = [
     {
       question: "What services do you offer?",
-      answer: "We provide strategic consulting services aimed at transforming business performance. Our focus is on enhancing three core pillars of your organization: business planning, marketing execution, and sales execution. Explore our individual service pages to learn more about how we drive impactful transformation"
+      answer: "We provide expert consulting services to help companies build and manage high-performing sales and marketing teams,driving improved ROI."
     },
     {
       question: "How do I get started?",
-      answer: "Get started by booking a free data analysis session with us. During this session, we’ll use data science to analyze key performance indicators, identify areas for improvement, and uncover opportunities for business transformation"
+      answer: "Get started by booking a meeting with us. During this session, we’ll use data science to analyze key performance indicators, identify areas for improvement, and uncover opportunities for building and managing sales and marketing team"
     },
     {
       question: "What makes your process different?",
       answer: (
         <>
-          We build the foundation for an organization's sales and marketing success, guiding them from business planning to final sales closures. Our comprehensive services empower businesses to create impactful marketing strategies that enhance sales performance. What sets us apart is our unique ability to deliver integrated marketing and sales solutions, helping companies seamlessly achieve their growth goals.
-          <br />
-          <br />
-          <strong>Historical Data Expertise:</strong> With over seven years of experience, we have worked with 100+ organizations and analyzed 400+ businesses through a data-driven lens. This extensive expertise provides us with unique insights into success and failure patterns across industries, enabling us to guide our clients toward business transformation with unmatched accuracy.
+          We have developed our proprietary marketing framework, Sales Syllabus Pro, based on insights gained from working with
+300+ clients. This framework enables organizations to prioritize high-value customers by building and managing high performing sales and marketing teams. Sales Syllabus Pro accelerates decision-making by reducing problem-solving time
+by 90% through real-time reporting, delivering precise insights at every level ofthe hierarchy.
+
         </>
       ),
     },

@@ -62,17 +62,21 @@ const AboutOurVision = () => {
         <Col xs={24} lg={12} className="space-y-2">
           <h2 className="text-3xl text-gray-800 mb-2">Our Vision</h2>
           <p className="text-base md:text-lg text-gray-700 mb-6">
-          To revolutionize how businesses operate by implementing structured, data-driven systems that maximize efficiency, foster collaboration, and deliver exceptional results.
+          o revolutionize the way businesses operate their sales and marketing functions by embedding a data driven, computational mindset into management behaviors. Our goal is to empower organizations to build
+and manage high-performing sales and marketing teams driven by strategic insights.
+
           </p>
           <h2 className="text-3xl text-gray-800 mt-2">Our Approach</h2>
           <p className="text-base md:text-lg text-gray-700 mb-6">
-          Transformation isn’t just a buzzword—it’s our commitment. We design systems that address the unique challenges of every organization, enabling seamless alignment between sales and marketing. Our approach ensures:
+          We follow a data-driven methodology, breaking down the entire process into smaller, structured segments
+and aligning them with sales and marketing goals. This approach allows us to identify and resolve
+challenges 90% faster; ensuring organizations operate with greater efficiency and precision
           </p>
-          <ul className="list-disc pl-6 text-base md:text-lg   text-gray-700 space-y-2" style={{fontSize:"18px"}}>
+          {/* <ul className="list-disc pl-6 text-base md:text-lg   text-gray-700 space-y-2" style={{fontSize:"18px"}}>
             <li>Streamlined processes for peak performance.</li>
             <li>Data-backed strategies for informed decision-making.</li>
             <li>A unified team culture driven by measurable outcomes.</li>
-          </ul>
+          </ul> */}
         </Col>
 
         {/* Right Column: Radial Chart */}

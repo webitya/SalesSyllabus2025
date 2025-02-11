@@ -5,6 +5,7 @@ import OptimizationGrowthComponent from "../../Elements/A2Home/A2FirstGrowth";
 import BuildingStrategyComponent from "../../Elements/A2Home/A2FirstStrategy";
 
 import HeroSectionA2 from "../../Elements/A2Home/A2Hero";
+import A2HomePhases from "../../Elements/A2Home/A2HomePhases";
 
 import InfographicSectionA2 from "../../Elements/A2Home/A2Info";
 
@@ -35,13 +36,14 @@ const Homepage = () => {
 </div> */}
 
         <A2Company />
-        <LeadsSectionA2 />
-        <InfographicSectionA2 />
-        <div className="!p-5 mb-16" style={{ backgroundColor: "#F9FAFB" }}>
+        <A2HomePhases/>
+        {/* <LeadsSectionA2 /> */}
+        {/* <InfographicSectionA2 /> */}
+        {/* <div className="!p-5 mb-16" style={{ backgroundColor: "#F9FAFB" }}>
           <DataAnalysisComponent />
           <BuildingStrategyComponent />
           <OptimizationGrowthComponent />
-        </div>
+        </div> */}
        
         <CallToActionA2 />
         <PerformanceMixedChart />

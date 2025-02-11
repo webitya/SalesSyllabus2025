@@ -142,7 +142,7 @@ const HeroSectionA2 = () => {
           className="text-3xl md:text-3xl lg:text-3xl font-bold leading-tight tracking-wide opacity-95 text-white transition-transform duration-300"
           style={{ animation: "fadeIn 1.2s ease-in-out" }}
         >
-          Drive Business Transformation with the Sales Syllabus Pro Frameworks
+          Build & Manage Your Sales and Marketing Team with Sales Syllabus
         </h1>
 
         {/* Subheading */}
@@ -150,7 +150,8 @@ const HeroSectionA2 = () => {
           className="text-base md:text-lg lg:text-xl font-medium opacity-95 text-white"
           style={{ animation: "fadeIn 1.5s ease-in-out" }}
         >
-          <span className='font-semibold'>Sales Syllabus<sup>®</sup> Pro</span> is a meticulously designed framework that aligns and optimizes your sales and marketing functions with precision
+          <span className='font-semibold'>Sales Syllabus<sup>®</sup></span>services provide a meticulously designed framework that aligns and optimizes your sales and marketing
+          functions with .
         </p>
 
         {/* Call to Action Button */}
@@ -173,7 +174,7 @@ const HeroSectionA2 = () => {
               }}
               aria-label="Start Your Business Transformation"
             >
-              Start Your Business Transformation
+               Build & Manage Your Team
             </Button>
           </ScrollLink>
         </div>
