@@ -25,7 +25,7 @@ const valuePoints = [
 
 const WarRoomValue = () => {
   return (
-    <section className="px-6 py-16 bg-gray-50">
+    <section className="px-6 py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900">How the Sales & Marketing War Room Adds Value</h2>
         <p className="mt-4 text-lg text-gray-600">Our structured, results-driven approach helps optimize your sales and marketing operations efficiently.</p>

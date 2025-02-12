@@ -25,7 +25,7 @@ const attendees = [
 
 const WhoShouldAttend = () => {
   return (
-    <section className="px-6 py-16 bg-gray-50">
+    <section className="px-6 py-20 bg-gray-50">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Side - Heading & Description */}
         <div>

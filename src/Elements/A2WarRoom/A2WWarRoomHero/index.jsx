@@ -3,7 +3,7 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 
 const A2WWarRoomHero = () => {
   return (
-    <section className="px-6 py-16 bg-gray-50">
+    <section className="px-6 py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Side - Text Content */}
         <div>
@@ -25,7 +25,7 @@ const A2WWarRoomHero = () => {
 
         {/* Right Side - Infographic (Placeholder) */}
         <div className="flex justify-center">
-          <img src="/images/war-room-infographic.png" alt="Sales & Marketing War Room" className="w-80" />
+          <img src="/warimg2.png" alt="Sales & Marketing War Room1" className="w-80" />
         </div>
       </div>
     </section>

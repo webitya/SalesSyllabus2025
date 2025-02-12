@@ -2,7 +2,7 @@ import { CalendarOutlined } from "@ant-design/icons";
 
 const A2WCTASection = () => {
   return (
-    <section className="px-6 py-16 bg-blue-50 text-center">
+    <section className="px-6 py-20 bg-blue-50 text-center">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900">
           Ready to Sprint Towards Greater Efficiency and Revenue?
