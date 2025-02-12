@@ -2,7 +2,7 @@ import { ThunderboltOutlined, ClockCircleOutlined, LineChartOutlined } from "@an
 
 const A2WWhyChooseWarRoom = () => {
   return (
-    <section className="px-6 py-16 bg-white">
+    <section className="px-6 py-20 bg-white">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Side - Content */}
         <div>
@@ -29,7 +29,7 @@ const A2WWhyChooseWarRoom = () => {
 
         {/* Right Side - Infographic (Placeholder) */}
         <div className="flex justify-center">
-          <img src="/images/why-war-room.png" alt="Why Choose War Room" className="w-80" />
+          <img src="/whywar.png" alt="Why Choose War Room" className="w-80" />
         </div>
       </div>
     </section>

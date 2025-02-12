@@ -20,7 +20,7 @@ const expectations = [
 
 const A2WWhatToExpect = () => {
   return (
-    <section className="px-6 py-16 bg-gray-50">
+    <section className="px-6 py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900">What to Expect from the Sales & Marketing War Room</h2>
         <p className="mt-4 text-lg text-gray-600">Each session is designed to tackle operational challenges at every level of your organization.</p>

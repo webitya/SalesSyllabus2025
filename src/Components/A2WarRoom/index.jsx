@@ -43,12 +43,12 @@ const A2WarRoom = () => {
   };
 
   const navLinks = [
-    { id: "intro", label: "Introduction" },
-    { id: "content", label: "Types" },
-    { id: "steps", label: "Comparision" },
-    { id: "benefits", label: "Benefits" },
-    { id: "positioning", label: "B2B Sales" },
-    { id: "premium-advantage", label: "Call To Action" },
+    { id: "intro", label: "Why Choose" },
+    { id: "content", label: "What to expect" },
+    { id: "steps", label: "How to sales" },
+    { id: "benefits", label: "Who should attend" },
+    { id: "positioning", label: "Contact Us" },
+    // { id: "premium-advantage", label: "Call To Action" },
   ];
 
   useEffect(() => {
