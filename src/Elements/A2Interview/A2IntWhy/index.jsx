@@ -12,7 +12,7 @@ const features = [
 
 const A2IntWhyChooseUs = () => {
   return (
-    <section className="px-6 py-16 bg-white">
+    <section className="px-6 py-20 bg-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900">Why Choose Our Interview Service?</h2>
         <p className="mt-4 text-lg text-gray-600">We help you hire the best sales and marketing talent with expert-driven interviews.</p>

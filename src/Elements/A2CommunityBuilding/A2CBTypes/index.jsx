@@ -44,7 +44,7 @@ const communityTypes = [
 
 export default function CommunityBuilding() {
   return (
-    <div className="mx-auto md:p-10 p-2 bg-white shadow-md rounded-lg">
+    <div className="mx-auto  pt-20 pb-5 bg-white shadow-md rounded-lg">
       <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
         Community Building Strategies
       </h2>

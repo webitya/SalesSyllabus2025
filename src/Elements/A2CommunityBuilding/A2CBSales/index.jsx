@@ -24,7 +24,7 @@ const futureB2BSalesData = [
 
 export default function A2CBSales() {
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-gray-50">
+    <div className=" mx-auto pt-20 pb-5 p-4 bg-gray-50">
       <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
         Why Community Building is the Future of B2B Sales
       </h2>

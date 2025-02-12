@@ -50,7 +50,7 @@ const Homepage = () => {
         <SalesSyllabusComponent/>
        
         <A2Testimonials />
-        <A2BusinessPackages />
+        {/* <A2BusinessPackages /> */}
         <HomeFAQSection />
         <FooterEl/>
       </LayoutEl>

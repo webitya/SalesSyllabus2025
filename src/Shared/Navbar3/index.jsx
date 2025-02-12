@@ -23,7 +23,9 @@ const NavbarEl3 = () => {
   const [isResourcesOpen4, setIsResourcesOpen4] = useState(false);
   const [isResourcesOpen5, setIsResourcesOpen5] = useState(false);
 
+// ================================================================================
 
+// =================================================================================
   useEffect(() => {
     const handleScroll = () => setIsSticky(window.scrollY > 150);
     window.addEventListener("scroll", handleScroll);
@@ -76,10 +78,10 @@ const NavbarEl3 = () => {
             <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Research Services <DownOutlined style={{fontSize:"13px"}}/></span>
             {isResourcesOpen && (
               <div className="dropdown-menu">
-                <NavLink to="/faqs" className="dropdown-item">Market Analysis</NavLink>
-                <NavLink to="/case-studies" className="dropdown-item">Marketing Communication Strategy</NavLink>
-                <NavLink to="/blog" className="dropdown-item">Community Building</NavLink>
-                <NavLink to="/free-resources" className="dropdown-item">Reporting Framework Developement</NavLink>
+                <NavLink to="/market-analysis" className="dropdown-item">Market Analysis</NavLink>
+                <NavLink to="/marketing-communication" className="dropdown-item">Marketing Communication Strategy</NavLink>
+                <NavLink to="/community-building" className="dropdown-item">Community Building</NavLink>
+                <NavLink to="/Sales-framework" className="dropdown-item">Reporting Framework Developement</NavLink>
               </div>
             )}
           </div>
@@ -93,9 +95,9 @@ const NavbarEl3 = () => {
             <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Sales Team Building <DownOutlined style={{fontSize:"13px"}}/></span>
             {isResourcesOpen3 && (
               <div className="dropdown-menu">
-                <NavLink to="/faqs" className="dropdown-item">Leadership Hiring & Mentoring</NavLink>
-                <NavLink to="/case-studies" className="dropdown-item">Master Class</NavLink>
-                <NavLink to="/blog" className="dropdown-item">Interview as a services</NavLink>
+                <NavLink to="/leadership-hiring-and-mentoring" className="dropdown-item">Leadership Hiring & Mentoring</NavLink>
+                <NavLink to="/master-class" className="dropdown-item">Master Class</NavLink>
+                <NavLink to="/interview" className="dropdown-item">Interview as a services</NavLink>
                 {/* <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink> */}
               </div>
             )}
@@ -110,7 +112,7 @@ const NavbarEl3 = () => {
             <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Sales Team Management Service <DownOutlined style={{fontSize:"13px"}}/></span>
             {isResourcesOpen4 && (
               <div className="dropdown-menu">
-                <NavLink to="/faqs" className="dropdown-item">Sales & Marketing War Room</NavLink>
+                <NavLink to="/war-room" className="dropdown-item">Sales & Marketing War Room</NavLink>
                 {/* <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
                 <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
                 <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink> */}

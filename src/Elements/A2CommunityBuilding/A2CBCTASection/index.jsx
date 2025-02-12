@@ -2,7 +2,7 @@ import { Button } from "antd";
 
 export default function A2CBCTASection() {
   return (
-    <div className="bg-gradient-to-r from-blue-600 to-blue-600 text-white py-12">
+    <div className="bg-gradient-to-r from-blue-600 to-blue-600 text-white pt-20 pb-5">
       <div className="max-w-4xl mx-auto text-center px-6">
         <h2 className="text-3xl font-bold mb-4">
           Investing in community building helps businesses reduce dependence on high-maintenance sales and marketing teams while achieving superior ROI.

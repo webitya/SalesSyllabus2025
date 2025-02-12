@@ -20,7 +20,7 @@ const benefits = [
 
 const A2IntWhoCanBenefit = () => {
   return (
-    <section className="px-6 py-16 bg-gray-50">
+    <section className="px-6 py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900">Who Can Benefit?</h2>
         <p className="mt-4 text-lg text-gray-600">Our Interview as a Service model is designed for various hiring professionals.</p>

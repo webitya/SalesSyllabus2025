@@ -43,12 +43,11 @@ const A2InterviewService = () => {
   };
 
   const navLinks = [
-    { id: "intro", label: "Introduction" },
-    { id: "content", label: "Types" },
-    { id: "steps", label: "Comparision" },
-    { id: "benefits", label: "Benefits" },
-    { id: "positioning", label: "B2B Sales" },
-    { id: "premium-advantage", label: "Call To Action" },
+    { id: "intro", label: "Why Choose" },
+    { id: "content", label: "Roles We Cover" },
+    { id: "steps", label: "Our Interview Process" },
+    { id: "benefits", label: "Who Can Benefit" },
+    { id: "positioning", label: "Contact Us" },
   ];
 
   useEffect(() => {

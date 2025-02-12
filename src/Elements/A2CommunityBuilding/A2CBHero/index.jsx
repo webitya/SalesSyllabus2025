@@ -71,45 +71,13 @@ const A2BHero = () => {
 
   return (
     <section
-      className=" text-white py-16 md:px-8 px-2 flex flex-col md:flex-row items-center justify-center space-y-1 md:space-y-0 md:space-x-1"
+      className=" text-white pt-20 pb-5 md:px-8 px-2 flex flex-col md:flex-row items-center justify-center space-y-1 md:space-y-0 md:space-x-1"
       style={{ backgroundColor: "#1E3A8A" }}
     >
       <div className="flex-1 text-center md:text-left animate__animated animate__fadeIn animate__delay-0.5s">
         <h1 className="md:text-4xl text-3xl font-bold mb-4 leading-tight animate__animated animate__fadeIn animate__delay-0.5s">
         Building trust and positioning your brand as an industry expert.- Unlock the Power of Community for Scalable Growth
         </h1>
-
-        {/* Slide-in Buttons with React Scroll */}
-        {/* <div className="mt-8 m-4 space-x-4">
-          <Link
-            to="contentMarketingSection"
-            smooth={true}
-            duration={500}
-            offset={-80}
-          >
-            <Button
-              type=""
-              icon={<LineChartOutlined />}
-              className="bg-gradient-to-r from-orange-400 to-yellow-500 text-white font-semibold py-2 px-6 rounded-full mb-4 hover:scale-105 transition-transform duration-200 shadow-lg"
-            >
-              Content Marketing
-            </Button>
-          </Link>
-          <Link
-            to="stepsOfContentMarketing"
-            smooth={true}
-            duration={500}
-            offset={-80}
-          >
-            <Button
-              type=""
-              icon={<LineChartOutlined />}
-              className="bg-gradient-to-r from-blue-400 to-purple-500 text-white font-semibold py-2 px-6 rounded-full hover:scale-105 transition-transform duration-200 shadow-lg"
-            >
-              Steps Of Content Marketing
-            </Button>
-          </Link>
-        </div> */}
       </div>
       <div className="flex-1 w-full mt-8 md:mt-0">
         <ReactApexChart

@@ -42,12 +42,11 @@ const A2MasterClass = () => {
   };
 
   const navLinks = [
-    { id: "intro", label: "Introduction" },
-    { id: "content", label: "Types" },
-    { id: "steps", label: "Comparision" },
-    { id: "benefits", label: "Benefits" },
-    { id: "positioning", label: "B2B Sales" },
-    { id: "premium-advantage", label: "Call To Action" },
+    { id: "intro", label: "Who Should Attend ?" },
+    { id: "content", label: "Key Takeaways" },
+    { id: "steps", label: "Why attend this workshop ?" },
+    { id: "benefits", label: "Workshop Details" },
+    { id: "positioning", label: "Contact Us" },
   ];
 
   useEffect(() => {

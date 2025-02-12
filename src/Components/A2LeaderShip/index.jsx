@@ -41,12 +41,11 @@ const A2LeadershipHiringAndMentoring = () => {
   };
 
   const navLinks = [
-    { id: "intro", label: "Introduction" },
-    { id: "content", label: "Challenges" },
-    { id: "steps", label: "Hiring Approach" },
-    { id: "benefits", label: "Mentoring" },
-    { id: "positioning", label: "Why Choose Us" },
-    { id: "premium-advantage", label: "Call To Action" },
+    { id: "intro", label: "Challenges" },
+    { id: "content", label: "Hiring Approach" },
+    { id: "steps", label: "Mentoring" },
+    { id: "benefits", label: "Why Choose Us" },
+    { id: "positioning", label: "Call To Action" },
   ];
 
   useEffect(() => {

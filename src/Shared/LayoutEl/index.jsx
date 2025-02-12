@@ -138,7 +138,7 @@ const LayoutEl = (data) => {
         </Link>
 
         {/* Key Deliverables Button */}
-        <button
+        {/* <button
   onClick={openModal}
   style={{
     backgroundColor: "#007BFF",
@@ -157,7 +157,7 @@ const LayoutEl = (data) => {
 >
   <FileTextOutlined style={{ fontSize: "16px" }} />
   Key Deliverables
-</button>
+</button> */}
       </div>
 
       {/* Modal */}

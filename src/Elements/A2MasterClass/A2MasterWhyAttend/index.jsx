@@ -9,7 +9,7 @@ const benefits = [
 
 const A2MasterWhyAttend = () => {
   return (
-    <section className="px-6 py-16 bg-white">
+    <section className="px-6 py-20 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900">Why Attend This Workshop?</h2>
         <p className="mt-4 text-lg text-gray-700">

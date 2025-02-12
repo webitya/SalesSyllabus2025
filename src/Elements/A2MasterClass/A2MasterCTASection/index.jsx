@@ -2,7 +2,7 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 
 const A2MasterCTASection = () => {
   return (
-    <section className="px-6 py-16 bg-blue-500 text-white text-center">
+    <section className="px-6 py-20 bg-blue-500 text-white text-center">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold">Ready to Build a High-Performance Sales & Marketing Team?</h2>
         <p className="mt-4 text-lg">
