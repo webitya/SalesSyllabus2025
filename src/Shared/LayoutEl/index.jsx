@@ -36,7 +36,24 @@ const LayoutEl = (data) => {
   return (
     <>
       <NavbarEl3 />
+      {/* === */}
+      
+
+
+      {/* === */}
       <div style={{ paddingTop: "70px" }}></div>
+      <div className="w-full bg-blue-600 text-white py-2 overflow-hidden flex items-center">
+      <div className="w-full flex">
+        <motion.div
+          className="whitespace-nowrap text-lg font-semibold"
+          initial={{ x: "100%" }}
+          animate={{ x: "-100%" }}
+          transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+        >
+          We are upgrading website content, please excuse us if you find any errors. We will fix this in 24 hours.
+        </motion.div>
+      </div>
+    </div>
       {data.children}
 
       {/* Free Resources Button */}
