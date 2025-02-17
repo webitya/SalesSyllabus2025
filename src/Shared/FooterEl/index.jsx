@@ -13,11 +13,11 @@ const FooterEl = () => {
           {/* Column 1: About Us */}
           <FooterColumn title="About Us">
             <p>
-            Sales Syllabus is a premium business consulting company specializing in achieving business transformation by optimizing sales and marketing functions.<br></br>
+            Sales Syllabus is a premium business consulting firm specializing in building and managing high performance sales and marketing teams using scientific approach.<br></br>
             {/* <i className='text-white'>The aim is not only to generate leads but to ensure these leads are effectively converted into sales, improving the overall revenue and sales performance.</i> */}
             </p>
             <Link to="/about-us" target="_blank" className='py-3 my-2'>
-              <Button className='footer-button my-2' type="primary" shape="round">Discover More</Button>
+              <Button className='footer-button my-2' type="primary" shape="round">Learn More</Button>
             </Link>
           </FooterColumn>
 
@@ -31,10 +31,10 @@ const FooterEl = () => {
             {/* <FooterLink to="/website-design">Website Design</FooterLink> */}
             <FooterLink to="/Sales-framework">Reporting Framework</FooterLink>
             <FooterLink to="/community-building">Community Building</FooterLink>
-            <FooterLink to="/leadership-hiring-and-mentoring">Leadership hiring and mentoring</FooterLink>
+            {/* <FooterLink to="/leadership-hiring-and-mentoring">Leadership hiring and mentoring</FooterLink>
             <FooterLink to="/master-class">Master Class</FooterLink>
             <FooterLink to="/interview">Interview</FooterLink>
-            <FooterLink to="/war-room">War Room</FooterLink>
+            <FooterLink to="/war-room">War Room</FooterLink> */}
           </FooterColumn>
 
           {/* Column 3: Get In Touch */}
@@ -96,9 +96,21 @@ const SocialLinks = () => (
 );
 
 const FooterBottom = () => (
-  <div className="footer-bottom">
-    <p>© 2024 Sales Syllabus. All rights reserved.</p>
-  </div>
+  <footer className="footer-bottom select-none">
+  <p>
+    © 2024 Sales Syllabus. All rights reserved. | Secured by{" "}
+    <a
+      href="https://webitya.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Webitya - Digital Marketing & Web Solutions"
+    >
+      Webitya
+    </a>
+  </p>
+</footer>
+
 );
 
 export default FooterEl;
+ 

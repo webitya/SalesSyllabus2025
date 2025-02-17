@@ -4,17 +4,10 @@ import { useState } from 'react';
 
 const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
   const navigate = useNavigate();
-  const [isServicesOpen, setIsServicesOpen] = useState(false); // State for Services submenu
-  const [isResourcesOpen, setIsResourcesOpen] = useState(false); // State for Resources submenu
+  const [openSubmenus, setOpenSubmenus] = useState({});
 
-  // Handle submenu toggle for Services
-  const toggleServices = () => {
-    setIsServicesOpen(!isServicesOpen);
-  };
-
-  // Handle submenu toggle for Resources
-  const toggleResources = () => {
-    setIsResourcesOpen(!isResourcesOpen);
+  const toggleSubmenu = (menu) => {
+    setOpenSubmenus((prev) => ({ ...prev, [menu]: !prev[menu] }));
   };
 
   const navigationLinks = [
@@ -24,14 +17,29 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
     {
       label: "Services",
       submenu: [
-        { label: "Market Analysis", href: "/market-analysis", image: "/lg4.png" },
-        // { label: "Content Marketing ", href: "/content-marketing", image: "/lg4.png" },
-        { label: "Marketing Communication", href: "/marketing-communication", image: "/lg4.png" },
-        // { label: "Online Reputation Management (ORM)", href: "/online-reputation-management", image: "/lg4.png" },
-        // { label: "Search Engine Optimization (SEO)", href: "/search-engine-optimization", image: "/lg4.png" },
-        // { label: "Branding & Community Building", href: "/branding-community-building", image: "/lg4.png" },
-        // { label: "Website Design", href: "/website-design", image: "/lg4.png" },
-        { label: "Reporting Framework", href: "/Sales-framework", image: "/lg4.png" },
+        {
+          label: "Research Services",
+          submenu: [
+            { label: "Market Analysis", href: "/market-analysis" },
+            { label: " Marketing Communication Strategy", href: "/marketing-communication" },
+            { label: "Community Building", href: "/community-building" },
+            { label: "Reporting Framework Developement", href: "/Sales-framework" },
+          ],
+        },
+        {
+          label: "Sales Team Building",
+          submenu: [
+            { label: "Leadership Hiring & Mentoring", href: "/leadership-hiring-and-mentoring" },
+            { label: "Master Class", href: "/master-class" },
+            { label: "Interview as a services", href: "/interview" },
+          ],
+        },
+        {
+          label: "Sales Team Management Service",
+          submenu: [
+            { label: "Sales & Marketing War Room", href: "/war-room" },
+          ],
+        },
       ],
     },
     {
@@ -43,17 +51,11 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
         { label: "Free Resources", href: "/free-resources" },
       ],
     },
-    {
-      label: "Addons",
-      submenu: [
-        { label: "Content Marketing", href: "/content-marketing" },
-      ],
-    },
   ];
 
   return (
     <Drawer
-      style={{ padding: '16px', backgroundColor: '#f0f4f8' }} // Soft blue background
+      style={{ padding: '16px', backgroundColor: '#f0f4f8' }}
       className="custom-drawer shadow-xl"
       placement="left"
       onClose={toggleDrawer}
@@ -68,23 +70,41 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
               <>
                 <button
                   className="w-full text-left flex items-center justify-between focus:outline-none hover:bg-gray-100 rounded-md px-3 py-2"
-                  onClick={item.label === "Services" ? toggleServices : toggleResources}
+                  onClick={() => toggleSubmenu(item.label)}
                 >
                   <span>{item.label}</span>
-                  <span>{(item.label === "Services" ? isServicesOpen : isResourcesOpen) ? '-' : '+'}</span>
+                  <span>{openSubmenus[item.label] ? '-' : '+'}</span>
                 </button>
-                {(item.label === "Services" ? isServicesOpen : isResourcesOpen) && (
+                {openSubmenus[item.label] && (
                   <ul className="submenu-list mt-2 space-y-3">
-                    {item.submenu.map((submenuItem) => (
-                      <li key={submenuItem.label} className="submenu-item bg-gray-100 hover:bg-gray-200 transition-colors rounded-lg px-2 py-1">
-                        <Link
-                          to={submenuItem.href}
-                          className="w-full flex items-center hover:text-blue-400 transition-colors"
-                          onClick={toggleDrawer} // Close drawer on link click
-                        >
-                          {submenuItem.image && <img src={submenuItem.image} alt={submenuItem.label} className="w-6 h-6 mr-2" />}
-                          <span className="block font-semibold">{submenuItem.label}</span>
-                        </Link>
+                    {item.submenu.map((sub) => (
+                      <li key={sub.label} className="submenu-item bg-gray-100 hover:bg-gray-200 transition-colors rounded-lg px-2 py-1">
+                        {sub.submenu ? (
+                          <>
+                            <button
+                              className="w-full text-left flex items-center justify-between focus:outline-none hover:bg-gray-200 rounded-md px-2 py-1"
+                              onClick={() => toggleSubmenu(sub.label)}
+                            >
+                              <span>{sub.label}</span>
+                              <span>{openSubmenus[sub.label] ? '-' : '+'}</span>
+                            </button>
+                            {openSubmenus[sub.label] && (
+                              <ul className="ml-4 mt-2 space-y-2">
+                                {sub.submenu.map((demo) => (
+                                  <li key={demo.label} className="submenu-item bg-gray-200 hover:bg-gray-300 transition-colors rounded-lg px-2 py-1">
+                                    <Link to={demo.href} className="w-full block hover:text-blue-400 transition-colors" onClick={toggleDrawer}>
+                                      {demo.label}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
+                          </>
+                        ) : (
+                          <Link to={sub.href} onClick={toggleDrawer} className="block w-full px-3 py-2 rounded-md hover:bg-gray-100">
+                            {sub.label}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -101,7 +121,6 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
         <li className="drawer-menu-item mt-6">
           <Link to="https://calendly.com/salessyllabus" target='_blank'>
             <Button
-            
               className="w-full py-2 rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:bg-blue-800 transition-all"
             >
               Book Appointment

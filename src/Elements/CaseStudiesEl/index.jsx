@@ -53,7 +53,7 @@ export default function CaseStudiesEl() {
         {caseStudies.map((caseStudy) => (
           <Col xs={24} sm={12} md={8} lg={6} key={caseStudy.id}>
             <motion.div
-              animate={cardAnimation} // Applying the up-down animation to each card
+              // animate={cardAnimation} // Applying the up-down animation to each card
               className="case-study-card-wrapper"
             >
               <Card
@@ -70,7 +70,7 @@ export default function CaseStudiesEl() {
                 <h3 className="case-study-title">{caseStudy.title}</h3>
                 <p className="case-study-description">{caseStudy.description}</p>
                 <Link to={caseStudy.link} target="_blank">
-                  <Button type="primary" className="mt-4">
+                  <Button className="mt-4  bg-blue-500 text-white">
                     Read Now
                   </Button>
                 </Link>

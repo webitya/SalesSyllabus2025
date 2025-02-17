@@ -74,12 +74,12 @@ const MarketAnalysisHero = () => {
       opacity: 0.9,
     },
     title: {
-      text: 'Business Metrics Analysis',
+      text: 'Identify High Paying Customer Segment',
       align: 'center',
       style: {
         color: '#E5E7EB',
         fontWeight: 'bold',
-        fontSize: '24px',
+        fontSize: '20px',
       },
     },
     theme: {
@@ -110,7 +110,7 @@ const MarketAnalysisHero = () => {
         <span className='text-4xl md:text-4xl font-bold  '>Market Analysis</span> <p className='text-xl  py-3 italic'> </p>
         </Title>
         <p className="text-lg md:text-xl text-white mb-8">
-        Market analysis is the foundation of business transformation sales and marketing sucess helping <span className='text-yellow-400'>identify high-value customer segments</span> that align with your company’s offerings. By pinpointing these segments,
+        Market analysis is the foundation of business transformation sales and marketing sucess helping <span className='text-yellow-400'>identify high paying customer segments</span> that align with your company’s offerings. By pinpointing these segments,
 businesses can tailortheir strategies to attract and serve the most profitable customers effectively.
 
           </p>

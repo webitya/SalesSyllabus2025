@@ -151,7 +151,7 @@ const HeroSectionA2 = () => {
           style={{ animation: "fadeIn 1.5s ease-in-out" }}
         >
           <span className='font-semibold'>Sales Syllabus<sup>®</sup></span>services provide a meticulously designed framework that aligns and optimizes your sales and marketing
-          functions with .
+          functions.
         </p>
 
         {/* Call to Action Button */}

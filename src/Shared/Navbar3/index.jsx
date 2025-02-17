@@ -5,27 +5,27 @@ import { MenuOutlined, CloseOutlined, FormOutlined, DownOutlined } from "@ant-de
 import CustomDrawer from "../DrawerEl";
 import "./NavbarEl3.css";
 
+
+
 const NavbarEl3 = () => {
+const [isServicesOpen, setIsServicesOpen] = useState(false)
   const menus = [
     { label: "Home", href: "/" },
-    // { label: "About Us", href: "/about-us" },
+    { label: "About Us", href: "/about-us" },
     // { label: "Market Analysis", href: "/market-analysis" },
     // { label: "Marketing Communication", href: "/marketing-communication" },
     // { label: "Content Marketing ", href: "/content-marketing" },
     // { label: "Reporting Framework", href: "/Sales-framework" },
   ];
+  const menus1 = [
+    { label: "Faqs", href: "/faqs" },
+    { label: "Blogs", href: "/blog" },
+    { label: "Contact Us", href: "/contact-us" },
+  ];
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
-  const [isResourcesOpen1, setIsResourcesOpen1] = useState(false);
-  const [isResourcesOpen3, setIsResourcesOpen3] = useState(false);
-  const [isResourcesOpen4, setIsResourcesOpen4] = useState(false);
   const [isResourcesOpen5, setIsResourcesOpen5] = useState(false);
-
-// ================================================================================
-
-// =================================================================================
   useEffect(() => {
     const handleScroll = () => setIsSticky(window.scrollY > 150);
     window.addEventListener("scroll", handleScroll);
@@ -69,58 +69,51 @@ const NavbarEl3 = () => {
             </NavLink>
           ))}
 
-          {/* Resources Dropdown */}
           <div
-            className="dropdown"
-            onMouseEnter={() => setIsResourcesOpen(true)}
-            onMouseLeave={() => setIsResourcesOpen(false)}
-          >
-            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Research Services <DownOutlined style={{fontSize:"13px"}}/></span>
-            {isResourcesOpen && (
-              <div className="dropdown-menu">
-                <NavLink to="/market-analysis" className="dropdown-item">Market Analysis</NavLink>
+      className="dropdown"
+      onMouseEnter={() => setIsServicesOpen(true)}
+      onMouseLeave={() => setIsServicesOpen(false)}
+    >
+      <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>
+        Services <DownOutlined style={{ fontSize: "14px" }} />
+      </span>
+      {isServicesOpen && (
+        <div className="dropdown-menus">
+          {/* First Separator - Before Two-Column Section */}
+        
+          {/* Upper Section - Two Columns */}
+          <div className="dropdown-upper">
+            <div className="dropdown-column">
+              <h1>Research Services</h1>
+              <NavLink to="/market-analysis" className="dropdown-item">Market Analysis</NavLink>
                 <NavLink to="/marketing-communication" className="dropdown-item">Marketing Communication Strategy</NavLink>
                 <NavLink to="/community-building" className="dropdown-item">Community Building</NavLink>
                 <NavLink to="/Sales-framework" className="dropdown-item">Reporting Framework Developement</NavLink>
-              </div>
-            )}
-          </div>
-          {/* ========================= */}
-          {/* Resources Dropdown 3 */}
-          <div
-            className="dropdown"
-            onMouseEnter={() => setIsResourcesOpen3(true)}
-            onMouseLeave={() => setIsResourcesOpen3(false)}
-          >
-            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Sales Team Building <DownOutlined style={{fontSize:"13px"}}/></span>
-            {isResourcesOpen3 && (
-              <div className="dropdown-menu">
-                <NavLink to="/leadership-hiring-and-mentoring" className="dropdown-item">Leadership Hiring & Mentoring</NavLink>
+
+            </div>
+            <hr className="dropdown-divider-1" />
+            <div className="dropdown-column">
+              <h1>Sales Team Building</h1>
+              <NavLink to="/leadership-hiring-and-mentoring" className="dropdown-item">Leadership Hiring & Mentoring</NavLink>
                 <NavLink to="/master-class" className="dropdown-item">Master Class</NavLink>
                 <NavLink to="/interview" className="dropdown-item">Interview as a services</NavLink>
-                {/* <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink> */}
-              </div>
-            )}
+            </div>
           </div>
-          {/* ========================= */}
-          {/* Resources Dropdown 4 */}
-          <div
-            className="dropdown"
-            onMouseEnter={() => setIsResourcesOpen4(true)}
-            onMouseLeave={() => setIsResourcesOpen4(false)}
-          >
-            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Sales Team Management Service <DownOutlined style={{fontSize:"13px"}}/></span>
-            {isResourcesOpen4 && (
-              <div className="dropdown-menu">
-                <NavLink to="/war-room" className="dropdown-item">Sales & Marketing War Room</NavLink>
-                {/* <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
-                <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
-                <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink> */}
-              </div>
-            )}
+
+          {/* Second Separator - Before Single Column Section */}
+          <hr className="dropdown-divider" />
+
+          {/* Lower Section - Single Column */}
+          <div className="dropdown-lower">
+            <div className="dropdown-column">
+              <h1>Sales Team Management Service</h1>
+              <NavLink to="/war-room" className="dropdown-item">Sales & Marketing War Room</NavLink>
+            </div>
           </div>
-          {/* ========================= */}
-          {/* Resources Dropdown 5*/}
+        </div>
+      )}
+    </div>
+      {/* ====================Resources */}
           <div
             className="dropdown"
             onMouseEnter={() => setIsResourcesOpen5(true)}
@@ -129,39 +122,38 @@ const NavbarEl3 = () => {
             <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Resources <DownOutlined style={{fontSize:"13px"}}/></span>
             {isResourcesOpen5 && (
               <div className="dropdown-menu">
-                <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
+                {/* <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink> */}
                 <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
-                <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
+                {/* <NavLink to="/blog" className="dropdown-item">Blogs</NavLink> */}
                 <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink>
               </div>
             )}
           </div>
+          {menus1.map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.href}
+              className={({ isActive }) => (isActive ? "active-link" : "navlink")}
+              style={{
+                color: "#333",
+                fontSize: "16px",
+                fontWeight: "500",
+              }}
+            >
+              {item.label}
+            </NavLink>
+          ))}
           {/* ========================= */}
-          {/* ===========Addons======== */}
-          {/* <div
-            className="dropdown mr-6"
-            onMouseEnter={() => setIsResourcesOpen1(true)}
-            onMouseLeave={() => setIsResourcesOpen1(false)}
-          >
-            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Add-on <DownOutlined style={{fontSize:"13px"}}/></span>
-            {isResourcesOpen1 && (
-              <div className="dropdown-menu w-40">
-                <NavLink to="/content-marketing" className="dropdown-item text-sm">Content Marketing</NavLink>
-              </div>
-            )}
-          </div> */}
-          {/* ========================= */}
-           
-
-          <Link to="https://calendly.com/salessyllabus" target="_blank">
+         <div className="pl-44">
+         <Link to="https://calendly.com/salessyllabus" target="_blank">
       <Button
         className="premium-button"
         style={{
           backgroundColor: "#007BFF",
           color: "#fff",
           fontWeight: "600",
-          borderRadius: "8px",
-          padding: "10px 30px",
+          borderRadius: "3px",
+          padding: "13px 30px",
           display: "flex",
           alignItems: "center",
           gap: "8px",
@@ -170,6 +162,7 @@ const NavbarEl3 = () => {
         Book Appointment <FormOutlined />
       </Button>
     </Link>
+         </div>
         </div>
 
         <Button

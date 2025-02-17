@@ -8,8 +8,9 @@ body {
 .navbar {
   padding: 0rem 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
+  gap: 80px;
   border-bottom: 2px solid #e0e0e0;
 }
 
@@ -43,8 +44,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-
-
 /* Drawer Toggle Animation */
 .menu-toggle {
   font-size: 25px;
@@ -57,34 +56,126 @@ body {
 }
 /* ==============DropDown============== */
 /* Dropdown Styling */
-.dropdown {
+.dropdown{
   position: relative;
   display: inline-block;
 }
 
-.dropdown-menu {
-  display: flex;
-  flex-direction: column;
+
+/* General Dropdown Menu */
+/* General Dropdown Menu */
+.dropdown-menu{
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 10px 0;
-  min-width: 150px;
-  z-index: 1000;
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height:auto;
+  max-width: 90vw; /* Prevents overflow */
+  transition: all 0.3s ease-in-out;
+  padding-bottom:0px;
+}
+.dropdown-menus {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height:470px;
+  max-width: 90vw; /* Prevents overflow */
+  transition: all 0.3s ease-in-out;
+  padding-bottom:0px;
 }
 
+/* Upper section with two columns */
+.dropdown-upper {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+}
+
+/* Lower section with one column */
+.dropdown-lower {
+  padding-top:0px;
+}
+
+/* Divider line between sections */
+.dropdown-divider {
+  border: none;
+  height: 2px;
+  background: #ddd;
+  margin: 10px 0;
+}
+.dropdown-divider-1{
+  border: none;
+  height:220px;
+  width:2px;
+  background: #ddd;
+  margin: 10px 0;
+}
+/* Dropdown Columns */
+.dropdown-column {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+}
+
+/* Bold and Styled Section Headings */
+.dropdown-column h1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #006CE7;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+/* Dropdown Items */
 .dropdown-item {
-  color: #333;
-  padding: 8px 20px;
+  display: block;
+  padding: 8px 0;
   text-decoration: none;
+  color: #333;
+  font-size: 14px;
   font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown-item:hover {
-  background-color: #f0f0f0;
   color: #0047FF;
+  
+}
+
+/* "New" Badge */
+.new-badge {
+  background: #ff4d4f;
+  color: white;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    width: 100%;
+    padding: 15px;
+  }
+  .dropdown-upper {
+    flex-direction: column;
+  }
+  .dropdown-column {
+    min-width: auto;
+    margin-bottom: 15px;
+  }
 }

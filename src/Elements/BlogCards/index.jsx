@@ -53,7 +53,7 @@ const BlogCards = () => {
               <div className="card-content">
                 <Title level={5} className="text-xl font-semibold mb-2">{topic.title}</Title>
                 <Link to={topic.route} target="_blank">
-                  <Button type="primary" className="mt-4">
+                  <Button  className="mt-4 bg-blue-500 text-white">
                     Read Now
                   </Button>
                 </Link>

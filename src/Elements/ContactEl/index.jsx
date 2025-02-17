@@ -153,7 +153,7 @@ const ContactUsEl = () => {
           </Form.Item>
 
           <Form.Item>
-            <Button type="primary" htmlType="submit" loading={loading} className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md">
+            <Button  htmlType="submit" loading={loading} className="bg-blue-600 hover:bg-blue-700 w-full text-white rounded-lg shadow-md">
               Send Message
             </Button>
           </Form.Item>

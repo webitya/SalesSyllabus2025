@@ -1,4 +1,5 @@
 import ContactUsEl from "../../Elements/ContactEl"
+import FooterEl from "../../Shared/FooterEl"
 import LayoutEl from "../../Shared/LayoutEl"
 
 
@@ -8,6 +9,7 @@ const ContactUs=()=>{
         <>
           <LayoutEl>
              <ContactUsEl/>
+             <FooterEl/>
           </LayoutEl>
         </>
     )

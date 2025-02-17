@@ -1,0 +1,174 @@
+import { useState, useEffect } from "react";
+import { Button } from "antd";
+import { Link, NavLink } from "react-router-dom";
+import { MenuOutlined, CloseOutlined, FormOutlined, DownOutlined } from "@ant-design/icons";
+import CustomDrawer from "../DrawerEl";
+import "./NavbarEl3.css";
+
+
+
+const NavbarEl3 = () => {
+const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const menus = [
+    { label: "Home", href: "/" },
+    { label: "About Us", href: "/about-us" },
+    // { label: "Market Analysis", href: "/market-analysis" },
+    // { label: "Marketing Communication", href: "/marketing-communication" },
+    // { label: "Content Marketing ", href: "/content-marketing" },
+    // { label: "Reporting Framework", href: "/Sales-framework" },
+  ];
+
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const [isResourcesOpen5, setIsResourcesOpen5] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => setIsSticky(window.scrollY > 150);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleDrawer = () => setIsDrawerOpen(!isDrawerOpen);
+
+  return (
+    <>
+      <nav
+        className={`navbar ${isSticky ? "sticky-navbar" : ""}`}
+        style={{
+          backgroundColor: isSticky ? "white" : "white",
+          boxShadow: isSticky ? "0 4px 20px rgba(0, 0, 0, 0.1)" : "none",
+          position: "fixed",
+          width: "100%",
+          zIndex: 1000,
+          transition: "all 0.3s ease",
+        }}
+      >
+        <div className="navbar-brand">
+          <NavLink to="/">
+            <img src="/logobbyy.svg" alt="brand-logo" width="110px" />
+          </NavLink>
+        </div>
+
+        <div className="navbar-menu sm:flex hidden">
+          {menus.map((item, index) => (
+            <NavLink
+              key={index}
+              to={item.href}
+              className={({ isActive }) => (isActive ? "active-link" : "navlink")}
+              style={{
+                color: "#333",
+                fontSize: "16px",
+                fontWeight: "500",
+              }}
+            >
+              {item.label}
+            </NavLink>
+          ))}
+
+          <div
+      className="dropdown"
+      onMouseEnter={() => setIsServicesOpen(true)}
+      onMouseLeave={() => setIsServicesOpen(false)}
+    >
+      <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>
+        Services <DownOutlined style={{ fontSize: "14px" }} />
+      </span>
+      {isServicesOpen && (
+        <div className="dropdown-menus">
+          {/* First Separator - Before Two-Column Section */}
+        
+          {/* Upper Section - Two Columns */}
+          <div className="dropdown-upper">
+            <div className="dropdown-column">
+              <h1>Paz Insurance</h1>
+              <NavLink to="/group-health" className="dropdown-item">Group Health Insurance</NavLink>
+              <NavLink to="/group-accident" className="dropdown-item">Group Personal Accident Insurance</NavLink>
+              <NavLink to="/group-term" className="dropdown-item">Group Term Life Insurance</NavLink>
+              <NavLink to="/super-top-up" className="dropdown-item">Super Top-up Insurance</NavLink>
+
+            </div>
+            <hr className="dropdown-divider-1" />
+            <div className="dropdown-column">
+              <h1>Paz Business</h1>
+              <NavLink to="/keyman" className="dropdown-item">Keyman Insurance</NavLink>
+              <NavLink to="/directors-liability" className="dropdown-item">Directors & Officers Liability Insurance</NavLink>
+              <NavLink to="/crime" className="dropdown-item">Crime Insurance</NavLink>
+              <NavLink to="/indemnity" className="dropdown-item">Personal Indemnity Insurance</NavLink>
+            </div>
+          </div>
+
+          {/* Second Separator - Before Single Column Section */}
+          <hr className="dropdown-divider" />
+
+          {/* Lower Section - Single Column */}
+          <div className="dropdown-lower">
+            <div className="dropdown-column">
+              <h1>Paz Advisory</h1>
+              <NavLink to="/personal-health" className="dropdown-item">
+                Personal Health Insurance <span className="new-badge">New</span>
+              </NavLink>
+              <NavLink to="/term-life" className="dropdown-item">
+                Term Life Insurance <span className="new-badge">New</span>
+              </NavLink>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+      {/* ====================Resources */}
+          <div
+            className="dropdown"
+            onMouseEnter={() => setIsResourcesOpen5(true)}
+            onMouseLeave={() => setIsResourcesOpen5(false)}
+          >
+            <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>Resources <DownOutlined style={{fontSize:"13px"}}/></span>
+            {isResourcesOpen5 && (
+              <div className="dropdown-menu">
+                <NavLink to="/faqs" className="dropdown-item">FAQs</NavLink>
+                <NavLink to="/case-studies" className="dropdown-item">Case Studies</NavLink>
+                <NavLink to="/blog" className="dropdown-item">Blogs</NavLink>
+                <NavLink to="/free-resources" className="dropdown-item">Free Resources</NavLink>
+              </div>
+            )}
+          </div>
+          {/* ========================= */}
+         <div className="pl-72">
+         <Link to="https://calendly.com/salessyllabus" target="_blank">
+      <Button
+        className="premium-button"
+        style={{
+          backgroundColor: "#007BFF",
+          color: "#fff",
+          fontWeight: "600",
+          borderRadius: "8px",
+          padding: "10px 30px",
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+        }}
+      >
+        Book Appointment <FormOutlined />
+      </Button>
+    </Link>
+         </div>
+        </div>
+
+        <Button
+          className="menu-toggle sm:hidden"
+          type="text"
+          aria-label={isDrawerOpen ? "Close menu" : "Open menu"}
+          style={{
+            color: isDrawerOpen ? "#FF0000" : "#0047FF",
+            fontSize: "24px",
+          }}
+          onClick={toggleDrawer}
+        >
+          {isDrawerOpen ? <CloseOutlined /> : <MenuOutlined />}
+        </Button>
+      </nav>
+
+      <CustomDrawer isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
+    </>
+  );
+};
+
+export default NavbarEl3;
