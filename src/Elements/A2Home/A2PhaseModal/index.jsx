@@ -4,10 +4,10 @@ import { SolutionOutlined, RocketOutlined, TeamOutlined, BarChartOutlined } from
 import emailjs from "@emailjs/browser";
 
 const phases = [
-  { title: "Strategy Building", phase: "Phase I", icon: <SolutionOutlined className="text-blue-500 text-3xl" /> },
-  { title: "Building Operational Capacity", phase: "Phase II", icon: <TeamOutlined className="text-green-500 text-3xl" /> },
-  { title: "Go To Market / Go Live", phase: "Phase III", icon: <RocketOutlined className="text-yellow-500 text-3xl" /> },
-  { title: "Strategic Marketing Decisions", phase: "Phase IV", icon: <BarChartOutlined className="text-red-500 text-3xl" /> }
+  { title: "Strategy Building", phase: "Strategy Building", icon: <SolutionOutlined className="text-blue-500 text-3xl" /> },
+  { title: "Building Operational Capacity", phase: "Building Operational Capacity", icon: <TeamOutlined className="text-green-500 text-3xl" /> },
+  { title: "Go To Market / Go Live", phase: "Go To Market / Go Live", icon: <RocketOutlined className="text-yellow-500 text-3xl" /> },
+  { title: "Strategic Marketing Decisions", phase: "Strategic Marketing Decisions", icon: <BarChartOutlined className="text-red-500 text-3xl" /> }
 ];
 
 const A2PhaseModal = ({ visible, onClose }) => {
