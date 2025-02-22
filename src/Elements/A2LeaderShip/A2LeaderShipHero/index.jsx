@@ -1,5 +1,4 @@
 import React from "react";
-import { SolutionOutlined, TeamOutlined, RiseOutlined, AimOutlined } from "@ant-design/icons";
 
 const SalesMarketingInfographic = () => {
   return (
@@ -26,30 +25,10 @@ const SalesMarketingInfographic = () => {
           </div>
         </div>
 
-        {/* Right Content - Infographic */}
-        <div className="flex justify-center">
-  <svg
-    className="w-60 md:w-80 transition-transform duration-300 hover:scale-105"
-    viewBox="0 0 200 200"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-  >
-
-    <circle cx="100" cy="100" r="80" stroke="#006EEA" strokeWidth="6" fill="none" />
-
-
-    <rect x="75" y="110" width="10" height="30" fill="#374151" />
-    <rect x="95" y="90" width="10" height="50" fill="#F59E0B" />
-    <rect x="115" y="100" width="10" height="40" fill="#374151" />
-
-
-    <path d="M70 80 L100 50 L130 80" stroke="#006EEA" strokeWidth="6" fill="none" />
-
-
-    <circle cx="100" cy="140" r="8" fill="#F59E0B" />
-  </svg>
-</div>
-
+      
+ <div className="flex justify-center">
+          <img src="/warimg2.png" alt="Sales & Marketing War Room1" className="w-80" />
+        </div>
 
 
 

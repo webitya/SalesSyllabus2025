@@ -35,7 +35,7 @@ const CommunityBuilding = () => {
   };
 
   const navLinks = [
-    { id: "intro", label: "Introduction" },
+    // { id: "intro", label: "Introduction" },
     { id: "content", label: "Types" },
     { id: "steps", label: "Comparision" },
     { id: "benefits", label: "Benefits" },
@@ -104,9 +104,9 @@ const CommunityBuilding = () => {
         <section id="hero">
           <A2BHero />
         </section>
-        <section id="intro">
+        {/* <section id="intro">
           <A2CBAbout />
-        </section>
+        </section> */}
         <section id="content">
           <A2CBTypes />
         </section>

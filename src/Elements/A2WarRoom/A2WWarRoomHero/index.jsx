@@ -8,10 +8,11 @@ const A2WWarRoomHero = () => {
         {/* Left Side - Text Content */}
         <div>
           <h1 className="text-4xl font-bold text-gray-900">
-            Enhance and Empower Your Sales & Marketing Leadership Team
+            Get the Same Sales Strategy at a Fraction of the Cost
           </h1>
           <p className="mt-4 text-lg text-gray-700">
-            Gain access to top leadership talent in sales and marketing and enable them to tackle the most complex sales and marketing challenges effectively.
+            Hiring a sales leader costs around <strong>₹40 lakhs per annum</strong>. 
+            Instead, join us and access the same expert sales strategies at a minimal cost.
           </p>
           <Button 
             type="primary" 
@@ -19,13 +20,24 @@ const A2WWarRoomHero = () => {
             className="mt-6 bg-blue-600 text-white hover:bg-blue-700 border-none" 
             icon={<ArrowRightOutlined />}
           >
-            Book a Consultation
+            Learn More
           </Button>
         </div>
 
-        {/* Right Side - Infographic (Placeholder) */}
-        <div className="flex justify-center">
-          <img src="/warimg2.png" alt="Sales & Marketing War Room1" className="w-80" />
+        {/* Right Side - Key Deliverables */}
+        <div className="flex flex-col space-y-4 text-gray-700">
+          <div className="bg-white p-4 shadow rounded-lg">
+            <strong>✔ Proven Sales Strategies</strong> - Leverage industry-best practices tailored to your business.
+          </div>
+          <div className="bg-white p-4 shadow rounded-lg">
+            <strong>✔ Expert Mentorship</strong> - Get guidance from top sales professionals.
+          </div>
+          <div className="bg-white p-4 shadow rounded-lg">
+            <strong>✔ Cost-Effective Growth</strong> - Scale your sales team without massive overhead costs.
+          </div>
+          <div className="bg-white p-4 shadow rounded-lg">
+            <strong>✔ Data-Driven Insights</strong> - Utilize analytics to optimize your sales performance.
+          </div>
         </div>
       </div>
     </section>

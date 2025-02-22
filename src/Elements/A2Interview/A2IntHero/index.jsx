@@ -27,7 +27,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Side - Infographic */}
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <svg
             className="w-60 md:w-80 transition-transform duration-300 hover:scale-105"
             viewBox="0 0 200 200"
@@ -38,7 +38,10 @@ const HeroSection = () => {
             <path d="M80 90 L100 70 L120 90" stroke="#3B82F6" strokeWidth="6" fill="none" />
             <circle cx="100" cy="120" r="10" fill="#3B82F6" />
           </svg>
-        </div>
+        </div> */}
+         <div className="flex justify-center">
+            <img src="/int1.png" alt="Community Building" className="w-80" />
+          </div>
       </div>
     </section>
   );
