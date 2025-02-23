@@ -108,6 +108,9 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
             <div className="dropdown-column">
               <h1>Sales Team Management Service</h1>
               <NavLink to="/war-room" className="dropdown-item">Sales & Marketing War Room</NavLink>
+              <NavLink to="/lead-generation-process-setup" className="dropdown-item">Lead Generation Process Setup</NavLink>
+              <NavLink to="/strategic-account-management" className="dropdown-item">Strategic account management</NavLink>
+             
             </div>
           </div>
         </div>

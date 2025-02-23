@@ -34,6 +34,8 @@ import A2LeadershipHiringAndMentoring from "./Components/A2LeaderShip";
 import A2MasterClass from "./Components/A2MasterClass";
 import A2InterviewService from "./Components/A2InterviewService";
 import A2WarRoom from "./Components/A2WarRoom";
+import A2LeadGeneration from "./Components/A2LeadsGeneraion";
+import A2AccountManagement from "./Components/A2AccManagement";
 
 
 const App=()=>{
@@ -62,6 +64,8 @@ const App=()=>{
           <Route path="/master-class" element={<A2MasterClass/>} />
           <Route path="/interview" element={<A2InterviewService/>}/>
           <Route path="/war-room" element={<A2WarRoom/>}/>
+          <Route path="/lead-generation-process-setup" element={<A2LeadGeneration/>}/>
+          <Route path="/strategic-account-management" element={<A2AccountManagement/>}/>
           {/* =============================================== */}
           <Route path="/blogs/sales-talent-management" element={<Blog1 />} />
           <Route path="/blogs/sales-hiring-challenges" element={<Blog2 />} />
