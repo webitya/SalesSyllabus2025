@@ -23,6 +23,13 @@ import A2MasterKeyTakeaways from "../../Elements/A2MasterClass/A2MasterKeyTakeWa
 import A2MasterWhyAttend from "../../Elements/A2MasterClass/A2MasterWhyAttend";
 import A2MasterWorkshopDetails from "../../Elements/A2MasterClass/A2MasterWorkshopDetails";
 import A2MasterCTASection from "../../Elements/A2MasterClass/A2MasterCTASection";
+import A2AccStrategicAccountHero from "../../Elements/A2AccountManagement/A2AccMangHero";
+import A2AccKeyTakeawaysSection from "../../Elements/A2AccountManagement/A2AccKeyTakeaways";
+import A2AccStrategicManagementSection from "../../Elements/A2AccountManagement/A2AccManagementSection";
+import A2AccSalesSyllabusComparison from "../../Elements/A2AccountManagement/A2AccComparision";
+import A2AccMultiStageConvincingProcess from "../../Elements/A2AccountManagement/A2AccStages";
+import A2AccDeliveryModels from "../../Elements/A2AccountManagement/A2AccDeliveryModels";
+import A2AccNextStepSection from "../../Elements/A2AccountManagement/A2AccNextStep";
 
 const A2AccountManagement = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -108,26 +115,26 @@ const A2AccountManagement = () => {
         } lg:ml-40`}
       >
         <section id="hero">
-          <A2MasterClassHero />
+          <A2AccStrategicAccountHero />
         </section>
         <section id="intro">
-          <A2MasterWhoShouldAttend />
+          <A2AccKeyTakeawaysSection />
         </section>
         <section id="content">
-          <A2MasterKeyTakeaways />
+          <A2AccStrategicManagementSection />
         </section>
         <section id="steps">
-          <A2MasterWhyAttend/>
+          <A2AccSalesSyllabusComparison/>
         </section>
         <section id="benefits">
-          <A2MasterWorkshopDetails />
+          <A2AccMultiStageConvincingProcess />
         </section>
         <section id="positioning">
-          <A2MasterCTASection />
+          <A2AccDeliveryModels />
         </section>
-        {/* <section id="premium-advantage">
-          <A2CBCTASection />
-        </section> */}
+        <section id="premium-advantage">
+          <A2AccNextStepSection />
+        </section>
         <FooterEl/>
       </main>
     </LayoutEl>
