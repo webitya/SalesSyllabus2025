@@ -82,10 +82,10 @@ const data = [
 
 const SalesSyllabusComparison = () => {
   return (
-    <section className="bg-[#F9FAFB] text-gray-800 py-12 px-6 md:px-16">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-[#F9FAFB] text-gray-800 py-12 px-2 md:px-2">
+      <div className=" mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">
-          Why Choose <span className="text-blue-500">Sales Syllabus</span>?
+        Why Choose Sales Syllabus <span className="text-blue-500">' Strategic Account Management Process?</span>
         </h2>
         <p className="text-center text-gray-600 mb-6">
           Traditional sales approaches often lead to inefficiencies, lost

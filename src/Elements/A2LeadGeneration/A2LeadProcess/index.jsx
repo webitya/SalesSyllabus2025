@@ -12,7 +12,7 @@ const steps = [
 const A2LeadGenerationProcess = () => {
   return (
     <section className="bg-gray-100 text-gray-800 py-12 px-4 md:px-12">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         <motion.h2 
           className="text-2xl md:text-3xl font-bold mb-4"
           initial={{ opacity: 0, y: -10 }} 
@@ -25,7 +25,7 @@ const A2LeadGenerationProcess = () => {
           We build structured lead generation processes across traditional and digital marketing channels.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4  mx-auto">
         {steps.map((step, index) => (
           <motion.div 
             key={index} 

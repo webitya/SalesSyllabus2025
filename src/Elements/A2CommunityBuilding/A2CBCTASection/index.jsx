@@ -1,4 +1,5 @@
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 
 export default function A2CBCTASection() {
   return (
@@ -10,12 +11,14 @@ export default function A2CBCTASection() {
         <p className="text-lg mb-6">
           Through a structured and strategic approach, Sales Syllabus delivers scalable community-building solutions tailored to your business needs, ensuring lasting brand impact and sustained growth.
         </p>
+        <Link to="https://calendly.com/salessyllabus" target="_blank">
         <Button
           size="large"
           className="bg-white hover:bg-blue-700 text-blue-500 px-8 py-2 rounded-lg"
         >
           Ready to build a thriving business community? Let’s talk!
         </Button>
+        </Link>
       </div>
     </div>
   );

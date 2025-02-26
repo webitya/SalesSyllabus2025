@@ -11,7 +11,7 @@ const features = [
 
 const A2LeadWhyKeyTakeaways = () => (
   <section className="bg-gray-100 text-gray-800 py-14 px-6 md:px-10">
-    <div className="max-w-5xl mx-auto text-center">
+    <div className=" mx-auto text-center">
       <motion.h2 
         className="text-3xl md:text-4xl font-bold mb-3"
         initial={{ opacity: 0, y: -20 }}
@@ -24,7 +24,7 @@ const A2LeadWhyKeyTakeaways = () => (
         Our structured approach empowers organizations to optimize their lead generation efforts efficiently.
       </p>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto mt-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5  mx-auto mt-8">
       {features.map((feature, index) => (
         <motion.div 
           key={index}

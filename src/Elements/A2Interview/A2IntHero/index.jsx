@@ -1,5 +1,6 @@
 import { Button } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -15,6 +16,7 @@ const HeroSection = () => {
             Streamline your hiring process with expert-driven, unbiased interviews tailored to evaluate candidates effectively.
           </p>
           <div className="mt-8">
+            <Link to="https://calendly.com/salessyllabus" target="_blank">
             <Button 
              
               size="large" 
@@ -23,6 +25,7 @@ const HeroSection = () => {
             >
               Book a Consultation
             </Button>
+            </Link>
           </div>
         </div>
 

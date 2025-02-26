@@ -38,6 +38,8 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
           label: "Sales Team Management Service",
           submenu: [
             { label: "Sales & Marketing War Room", href: "/war-room" },
+            { label: "Lead generation process setup", href: "/lead-generation-process-setup" },
+            { label: "Strategic account management", href: "/strategic-account-management" },
           ],
         },
       ],

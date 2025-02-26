@@ -24,6 +24,7 @@ import A2WWhatToExpect from "../../Elements/A2WarRoom/A2WWhatToExpect";
 import A2WWarRoomValue from "../../Elements/A2WarRoom/A2WWarRoomValue";
 import A2WWhoShouldAttend from "../../Elements/A2WarRoom/A2WWhoShouldAttend";
 import A2WCTASection from "../../Elements/A2WarRoom/A2WCTASection";
+import A2WarRoomKeyTakeaways from "../../Elements/A2WarRoom/A2WKeyTakeaways";
 
 const A2WarRoom = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -43,7 +44,9 @@ const A2WarRoom = () => {
   };
 
   const navLinks = [
+    { id: "content1", label: "Key Takeaways" },
     { id: "intro", label: "Why Choose" },
+   
     { id: "content", label: "What to expect" },
     { id: "steps", label: "How to sales" },
     { id: "benefits", label: "Who should attend" },
@@ -111,6 +114,9 @@ const A2WarRoom = () => {
       >
         <section id="hero">
           <A2WWarRoomHero />
+        </section>
+        <section id="content1">
+          <A2WarRoomKeyTakeaways />
         </section>
         <section id="intro">
           <A2WWhyChooseWarRoom />

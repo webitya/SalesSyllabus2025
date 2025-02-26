@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const A2AccStrategicManagementSection = () => {
   return (
-    <section className="bg-[#F7F9FC] text-gray-800 py-12 px-6 md:px-16">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-[#F7F9FC] text-gray-800 py-12 px-2 md:px-2">
+      <div className=" mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: -20 }} 
           animate={{ opacity: 1, y: 0 }} 

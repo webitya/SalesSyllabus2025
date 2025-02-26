@@ -21,12 +21,12 @@ const expectations = [
 const A2WWhatToExpect = () => {
   return (
     <section className="px-6 py-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900">What to Expect from the Sales & Marketing War Room</h2>
         <p className="mt-4 text-lg text-gray-600">Each session is designed to tackle operational challenges at every level of your organization.</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10  mx-auto">
         {expectations.map((item, index) => (
           <div key={index} className="bg-white p-6 shadow-md rounded-lg border text-center">
             {item.icon}

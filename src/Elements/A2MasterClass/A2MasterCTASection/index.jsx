@@ -12,7 +12,7 @@ const A2MasterCTASection = () => {
         {/* Register Button */}
         <div className="mt-6">
           <a 
-            href="#register"
+            href="https://calendly.com/salessyllabus" target="_blank"
             className="inline-flex items-center bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold text-lg shadow-md hover:bg-gray-100 transition"
           >
             Register Now <ArrowRightOutlined className="ml-2" />

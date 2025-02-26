@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SalesMarketingInfographic = () => {
   return (
@@ -19,9 +20,11 @@ const SalesMarketingInfographic = () => {
             organizational culture and drive business transformation.
           </p>
           <div className="mt-8">
-            <button className="bg-blue-600 text-white font-medium px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+           <Link to="https://calendly.com/salessyllabus" target="_blank">
+           <button className="bg-blue-600 text-white font-medium px-6 py-3 rounded-lg shadow hover:bg-blue-700">
               Get Started
             </button>
+           </Link>
           </div>
         </div>
 

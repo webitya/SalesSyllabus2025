@@ -26,13 +26,13 @@ const valuePoints = [
 const WarRoomValue = () => {
   return (
     <section className="px-6 py-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900">How the Sales & Marketing War Room Adds Value</h2>
         <p className="mt-4 text-lg text-gray-600">Our structured, results-driven approach helps optimize your sales and marketing operations efficiently.</p>
       </div>
 
       {/* Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10  mx-auto">
         {valuePoints.map((point, index) => (
           <div key={index} className="p-6 rounded-lg shadow-sm border bg-white flex items-start space-x-4">
             <div className="p-3 rounded-full bg-gray-100">{point.icon}</div>

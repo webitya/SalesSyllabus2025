@@ -19,9 +19,9 @@ const A2PhaseModal = ({ visible, onClose }) => {
   };
 
   const handleFormSubmit = async (values) => {
-    const serviceId = "your_service_id"; // Replace with EmailJS service ID
-    const templateId = "your_template_id"; // Replace with EmailJS template ID
-    const publicKey = "your_public_key"; // Replace with EmailJS public key
+    const serviceId = "service_evnh226"; // Replace with EmailJS service ID
+    const templateId = "template_43ycn0v"; // Replace with EmailJS template ID
+    const publicKey = "aHWw0G5vVDW9ORqW2"; // Replace with EmailJS public key
 
     const templateParams = {
       name: values.name,

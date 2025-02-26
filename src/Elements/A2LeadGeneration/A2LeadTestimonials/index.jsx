@@ -29,7 +29,7 @@ const leadGenerationSteps = [
 const LeadGenerationProcess = () => {
   return (
     <section className="bg-gray-100 text-gray-800 py-12 px-4 md:px-12">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         <motion.h2 
           className="text-2xl md:text-3xl font-bold mb-6"
           initial={{ opacity: 0, y: -10 }} 

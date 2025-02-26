@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const A2AccDeliveryModels = () => {
   return (
-    <section className="bg-[#F9FAFB] text-gray-800 py-12 px-6 md:px-16">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="bg-[#F9FAFB] text-gray-800 py-12 px-2 md:px-2">
+      <div className=" mx-auto text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-6 text-[#1E3A5F]"
           initial={{ opacity: 0, y: -20 }}
@@ -19,7 +19,7 @@ const A2AccDeliveryModels = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8  mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -2,12 +2,13 @@ import React from "react";
 import { Button, Card } from "antd";
 import { motion } from "framer-motion";
 import { PhoneOutlined, TeamOutlined, SettingOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const A2GetStartedSection = () => {
   return (
     <section className="bg-[#F9FAFB] text-gray-800 flex justify-center py-12 px-6">
       <motion.div
-        className="w-full max-w-6xl text-center p-8 bg-white rounded-xl shadow-lg border border-gray-200"
+        className="w-full  text-center p-8 bg-white rounded-xl shadow-lg border border-gray-200"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -47,6 +48,7 @@ const A2GetStartedSection = () => {
           ))}
         </div>
         <div className="flex justify-center">
+          <Link to="https://calendly.com/salessyllabus" target="_blank">
           <Button
             type="primary"
             size="large"
@@ -54,6 +56,7 @@ const A2GetStartedSection = () => {
           >
             <PhoneOutlined /> Schedule a Call
           </Button>
+          </Link>
         </div>
       </motion.div>
     </section>

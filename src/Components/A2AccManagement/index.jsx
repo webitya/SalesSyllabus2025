@@ -49,11 +49,12 @@ const A2AccountManagement = () => {
   };
 
   const navLinks = [
-    { id: "intro", label: "Who Should Attend ?" },
-    { id: "content", label: "Key Takeaways" },
-    { id: "steps", label: "Why attend this workshop ?" },
-    { id: "benefits", label: "Workshop Details" },
-    { id: "positioning", label: "Contact Us" },
+    { id: "intro", label: "Key Takeaways" },
+    { id: "content", label: "Our Process" },
+    { id: "steps", label: "Why Choose Us" },
+    { id: "benefits", label: "Multi-Stage Convincing Process" },
+    { id: "positioning", label: "Our Delivery Models" },
+    { id: "premium-advantage", label: "Contact Us" },
   ];
 
   useEffect(() => {

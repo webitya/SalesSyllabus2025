@@ -20,7 +20,7 @@ const deliveryModels = [
 const A2LeadDeliveryModels = () => {
   return (
     <section className="bg-gray-100 text-gray-800 py-16 px-6 md:px-16">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-6"
           initial={{ opacity: 0, y: -20 }}
@@ -29,7 +29,7 @@ const A2LeadDeliveryModels = () => {
         >
           Our <span className="text-[#007BFF]">Delivery Models</span>
         </motion.h2>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-600  mx-auto">
           We offer two structured models to set up your lead generation process effectively.
         </p>
       </div>

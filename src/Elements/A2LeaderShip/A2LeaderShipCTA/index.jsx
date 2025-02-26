@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function A2LeaderShipCTA() {
     return (
       <section className="bg-blue-600 text-white py-16 px-6 text-center">
@@ -13,9 +15,11 @@ export default function A2LeaderShipCTA() {
           </p>
   
           {/* CTA Button */}
+          <Link to="https://calendly.com/salessyllabus" target="_blank">
           <button className="bg-white text-blue-600 font-semibold py-3 px-6 rounded-full text-lg shadow-md hover:bg-gray-200 transition duration-300">
             Get in Touch Today
           </button>
+          </Link>
         </div>
       </section>
     );

@@ -21,7 +21,7 @@ const MasterclassHero = () => {
           {/* CTA Button */}
           <div>
             <a
-              href="#register"
+              href="https://calendly.com/salessyllabus" target="_blank"
               className="inline-flex items-center px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition"
             >
               <BookOutlined className="mr-2 text-xl" /> Register Now

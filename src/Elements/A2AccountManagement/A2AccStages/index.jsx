@@ -39,8 +39,8 @@ const stages = [
 
 const MultiStageProcess = () => {
   return (
-    <section className="bg-gray-50 py-8 px-4 md:px-8">
-      <motion.div className="max-w-5xl mx-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }}>
+    <section className="bg-gray-50 py-8 px-2 md:px-2">
+      <motion.div className=" mx-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6 }}>
       <div className="flex justify-center items-center">
       <motion.h2 
         className="text-2xl md:text-3xl font-bold mb-4 text-[#1E3A5F] border-b-4 border-[#007BFF] inline-block pb-2"

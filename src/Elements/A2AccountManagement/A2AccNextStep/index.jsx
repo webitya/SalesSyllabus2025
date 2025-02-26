@@ -2,11 +2,12 @@ import React from "react";
 import { Button } from "antd";
 import { motion } from "framer-motion";
 import { CalendarOutlined, FileOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const A2AccNextStepSection = () => {
   return (
     <section className="bg-[#F8FAFC] text-gray-800 py-12 px-6">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className=" mx-auto text-center">
         <motion.h2
           className="text-2xl md:text-3xl font-bold mb-6"
           initial={{ opacity: 0, y: -10 }}
@@ -45,6 +46,7 @@ const A2AccNextStepSection = () => {
         </div>
 
         <div className="mt-8">
+          <Link to="https://calendly.com/salessyllabus" target="_blank">
           <Button
             type="primary"
             size="large"
@@ -52,6 +54,7 @@ const A2AccNextStepSection = () => {
           >
             Get Started Now
           </Button>
+          </Link>
         </div>
       </div>
     </section>
