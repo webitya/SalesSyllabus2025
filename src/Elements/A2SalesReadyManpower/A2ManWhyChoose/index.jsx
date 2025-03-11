@@ -25,17 +25,18 @@ const benefits = [
 
 export default function A2ManWhyChooseSalesSyllabus() {
   return (
-    <div className="py-12 bg-background px-4 md:px-12 text-center">
-      <h2 className="text-3xl font-bold text-primary mb-6">
-        Why Choose Sales Syllabus for Your Hiring Needs?
-      </h2>
-      <div className="max-w-3xl mx-auto space-y-6">
+    <div className="py-16 bg-gray-50 px-6 md:px-16 text-center rounded-lg shadow-sm">
+      
+      <h1 className="text-3xl text-center font-semibold text-blue-900 mb-6">
+      Why Choose Sales Syllabus for Your Hiring Needs?
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {benefits.map((benefit, index) => (
-          <div key={index} className="flex items-start space-x-4 p-6 bg-white rounded-lg shadow-sm border border-border">
-            <CheckCircleOutlined className="text-2xl text-primary" />
+          <div key={index} className="flex items-start space-x-4 p-5 bg-white rounded-lg shadow-md border border-gray-200">
+            <CheckCircleOutlined className="text-3xl text-blue-600 flex-shrink-0" />
             <div className="text-left">
-              <h3 className="text-xl font-semibold text-secondary">{benefit.title}</h3>
-              <p className="text-muted">{benefit.description}</p>
+              <h3 className="text-lg font-semibold text-gray-800">{benefit.title}</h3>
+              <p className="text-gray-600">{benefit.description}</p>
             </div>
           </div>
         ))}

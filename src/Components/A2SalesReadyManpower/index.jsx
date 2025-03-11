@@ -49,11 +49,12 @@ const A2SalesReadyManpower = () => {
   };
 
   const navLinks = [
-    { id: "intro", label: "Who Should Attend ?" },
-    { id: "content", label: "Key Takeaways" },
-    { id: "steps", label: "Why attend this workshop ?" },
-    { id: "benefits", label: "Workshop Details" },
-    { id: "positioning", label: "Contact Us" },
+    { id: "intro", label: "Introduction" },
+    { id: "content", label: "What ?" },
+    { id: "steps", label: "Recruitment Matrix" },
+    { id: "benefits", label: "How It Works" },
+    { id: "positioning", label: "Why Choose" },
+    { id: "cta", label: "Contact Us" },
   ];
 
   useEffect(() => {
@@ -132,7 +133,7 @@ const A2SalesReadyManpower = () => {
         <section id="positioning">
           <A2ManWhyChooseSalesSyllabus />
         </section>
-        <section id="premium-advantage">
+        <section id="cta">
           <A2ManCallToActionSales />
         </section>
         <FooterEl/>
