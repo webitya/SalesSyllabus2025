@@ -8,11 +8,17 @@ import HeroSectionA2 from "../../Elements/A2Home/A2Hero";
 import A2HomePhases from "../../Elements/A2Home/A2HomePhases";
 
 import InfographicSectionA2 from "../../Elements/A2Home/A2Info";
+import A2MarketKnowledgeSection from "../../Elements/A2Home/A2MarketKnowledge";
 
 import A2BusinessPackages from "../../Elements/A2Home/A2Packages";
+import A2SalesExcellenceSection from "../../Elements/A2Home/A2SalesExcellence";
+import A2ImpactSalesMarketingSection from "../../Elements/A2Home/A2SalesImpact";
+import A2SalesMarketingSection from "../../Elements/A2Home/A2SalesMarketing";
+import A2SalesReadyTalentSection from "../../Elements/A2Home/A2TalentSection";
 
 import A2Testimonials from "../../Elements/A2Home/A2Testimonial";
 import LeadsSectionA2 from "../../Elements/A2Home/A2Vetices";
+import A2WarRoomSection from "../../Elements/A2Home/A2WarRoomSection";
 import SalesSyllabusComponent from "../../Elements/A2Home/SalesSyllabusComponent";
 
 import HomeFAQSection from "../../Elements/HomeFaqs";
@@ -36,6 +42,12 @@ const Homepage = () => {
 </div> */}
 
         <A2Company />
+        <A2SalesMarketingSection/>
+        <A2ImpactSalesMarketingSection/>
+        <A2SalesExcellenceSection/>
+        <A2WarRoomSection/>
+        <A2SalesReadyTalentSection/>
+        <A2MarketKnowledgeSection/>
         <A2HomePhases/>
         {/* <LeadsSectionA2 /> */}
         {/* <InfographicSectionA2 /> */}

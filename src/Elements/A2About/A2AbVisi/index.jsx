@@ -58,20 +58,19 @@ const chartSeries = [90];
 const AboutOurVision = () => {
   return (
     <section className="w-full py-20 bg-gradient-to-r from-blue-50 to-indigo-50 font-premium">
-      <Row gutter={[32, 32]} className="flex items-center mx-auto px-4 lg:px-12">
+      <Row gutter={[32, 32]} className="flex items-start mx-auto px-4 lg:px-12">
         <Col xs={24} lg={12} className="space-y-2">
           <h2 className="text-3xl text-gray-800 mb-2">Our Vision</h2>
           <p className="text-base md:text-lg text-gray-700 mb-6">
-          o revolutionize the way businesses operate their sales and marketing functions by embedding a data driven, computational mindset into management behaviors. Our goal is to empower organizations to build
-and manage high-performing sales and marketing teams driven by strategic insights.
+          We aim to revolutionize sales and marketing operations by embedding a data analysis  mindset into management practices. Our goal is to empower organizations to minimize mistakes and achieve sustained sales and marketing success.
 
           </p>
-          <h2 className="text-3xl text-gray-800 mt-2">Our Approach</h2>
+          {/* <h2 className="text-3xl text-gray-800 mt-2">Our Approach</h2>
           <p className="text-base md:text-lg text-gray-700 mb-6">
           We follow a data-driven methodology, breaking down the entire process into smaller, structured segments
 and aligning them with sales and marketing goals. This approach allows us to identify and resolve
 challenges 90% faster; ensuring organizations operate with greater efficiency and precision
-          </p>
+          </p> */}
           {/* <ul className="list-disc pl-6 text-base md:text-lg   text-gray-700 space-y-2" style={{fontSize:"18px"}}>
             <li>Streamlined processes for peak performance.</li>
             <li>Data-backed strategies for informed decision-making.</li>

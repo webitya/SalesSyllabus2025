@@ -44,6 +44,7 @@ import TimelineComponent from "../../Elements/HomeJourney";
 import LayoutEl from "../../Shared/LayoutEl";
 import FooterEl from "../../Shared/FooterEl";
 import A2OurStrengths from "../../Elements/A2About/A2OurStrength";
+import A2OurServicesSection from "../../Elements/A2About/A2OurServices";
 
 const AboutUs = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -66,6 +67,7 @@ const AboutUs = () => {
     // { id: "hero", label: "Hero" },
     { id: "who-we-are", label: "Who We Are" },
     { id: "our-vision", label: "Our Vision" },
+    { id: "our-services", label: "Our Services" },
     { id: "why-choose-us", label: "Why Choose Us" },
     { id: "experience", label: "Experience" },
     { id: "timeline", label: "Our Journey" },
@@ -142,6 +144,9 @@ const AboutUs = () => {
         <section id="our-vision">
           <AboutOurVision />
           <A2OurStrengths/>
+        </section>
+        <section id="our-services">
+          <A2OurServicesSection/>
         </section>
         <section id="why-choose-us">
           <AboutWhyChooseUs />

@@ -6,8 +6,8 @@ const HomeFAQSection = () => {
 
   const faqs = [
     {
-      question: "What services do you offer?",
-      answer: "We provide expert consulting services to help companies build and manage high-performing sales and marketing teams,driving improved ROI."
+      question: "What value sales syllabus is adding ?",
+      answer: "Sales syllabus provides  real world knowledge and market insights to business to excel in sales and marketing . This enables business to do less mistakes "
     },
     {
       question: "How do I get started?",
@@ -32,6 +32,14 @@ by 90% through real-time reporting, delivering precise insights at every level o
     {
       question: "Do you provide ongoing support?",
       answer: "Yes, we provide assistance through our dedicated support desk"
+    },
+    {
+      question: "How do I get started?",
+      answer: "Contact us and tell us the area of improvement , we will suggest the best suitable solution "
+    },
+    {
+      question: "What makes your process different?",
+      answer: "Our mission is to minimize costly trial-and-error in sales and marketing. We conduct in-depth market research and analysis to identify patterns of success and failure, enabling us to recommend low-risk, high-impact sales and marketing models for our clients"
     },
   ];
 

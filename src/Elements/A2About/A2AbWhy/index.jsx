@@ -40,9 +40,7 @@ const AboutWhoWeAre = () => {
         <Col xs={24} md={12}>
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Who We Are ?</h2>
           <p className="text-base md:text-lg text-gray-700 mb-6">
-          At Sales Syllabus, we help organizations build and manage sales teams scientifically, ensuring maximum ROI. Managing a
-high-performing sales team effectively is a major challenge, and with over seven years of expertise, we have developed a
-proven system that strategically aligns and optimizes sales and marketing functions for sustainable growth.
+          We are a strategic marketing and sales consulting company that equips organizations with real-world knowledge and insights to drive sales success. By sharing proven strategies and lessons from both successes and failures, we help businesses minimize mistakes, optimize resources, and accelerate growth.
 
           </p>
         </Col>

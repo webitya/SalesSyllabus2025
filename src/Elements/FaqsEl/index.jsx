@@ -23,14 +23,13 @@ const FAQPageEl = () => {
             className="bg-blue-50"
           >
             <p className="text-base">
-            We provide expert consulting services to help companies build and manage high-performing sales and marketing teams,
-driving improved ROI.
+            We provide revenue generation consulting, pre-trained sales and marketing professionals, and specialized courses tailored for all levels of the sales and marketing hierarchy.I.
 
 
             </p>
           </Panel>
           <Panel 
-  header="How do you build a sales and marketing strategy?" 
+  header="How do you build a sales and marketing strategy under revenue generation consulting ?" 
   key="2" 
   extra={<QuestionCircleOutlined style={{ fontSize: '24px', color: '#1890ff' }} />}
   className="bg-green-50"

@@ -50,8 +50,8 @@ const phases = [
 
 const A2HomePhases = () => {
   return (
-    <div className="bg-gray-100 pt-20 pb-5 px-4">
-      <Card bordered={false} className="shadow-lg p-2 bg-white rounded-2xl">
+    <div className="bg-gray-100  pb-5 px-4">
+      <Card bordered={false} className="shadow-lg p-2 bg-white ">
         {/* <Title level={3} className="text-center ">
           
         </Title> */}
