@@ -32,6 +32,7 @@ const FooterEl = () => {
             <FooterLink to="/Sales-framework">Reporting Framework</FooterLink>
             <FooterLink to="/community-building">Community Building</FooterLink>
             <FooterLink to="/learning-center">Learning Center</FooterLink>
+            <FooterLink to="/sales-ready-manpower">Sales Ready Manpower</FooterLink>
             {/* <FooterLink to="/leadership-hiring-and-mentoring">Leadership hiring and mentoring</FooterLink>
             <FooterLink to="/master-class">Master Class</FooterLink>
             <FooterLink to="/interview">Interview</FooterLink>

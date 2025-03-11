@@ -23,22 +23,15 @@ import A2MasterKeyTakeaways from "../../Elements/A2MasterClass/A2MasterKeyTakeWa
 import A2MasterWhyAttend from "../../Elements/A2MasterClass/A2MasterWhyAttend";
 import A2MasterWorkshopDetails from "../../Elements/A2MasterClass/A2MasterWorkshopDetails";
 import A2MasterCTASection from "../../Elements/A2MasterClass/A2MasterCTASection";
-import A2LeadHeroSection from "../../Elements/A2LeadGeneration/A2LeadHero";
-import A2LeadWhyKeyTakeaways from "../../Elements/A2LeadGeneration/A2LeadWhyKey";
-import A2LeadGenerationProcess from "../../Elements/A2LeadGeneration/A2LeadProcess";
-import A2LeadDataDrivenInsights from "../../Elements/A2LeadGeneration/A2LeadDataDriven";
-import A2LeadClientTestimonials from "../../Elements/A2LeadGeneration/A2LeadTestimonials";
-import A2GetStartedSection from "../../Elements/A2LeadGeneration/A2LeadCTA";
-import A2LeadDeliveryModels from "../../Elements/A2LeadGeneration/A2LeadModel";
-import A2LeHeroSection from "../../Elements/A2LearningCenter/A2LeHeroSection";
-import A2LeAboutSection from "../../Elements/A2LearningCenter/A2LeAboutUs";
-import A2LeCourseOfferings from "../../Elements/A2LearningCenter/CourseOffering";
-import A2LeWhyEnroll from "../../Elements/A2LearningCenter/A2LeWhyChoose";
-import A2LeDeliveryModel from "../../Elements/A2LearningCenter/A2LeDeliveryModel";
-import A2LeCallToAction from "../../Elements/A2LearningCenter/A2LeCTA";
-import A2LeIntroLearningCentre from "../../Elements/A2LearningCenter/A2LeIntro";
+import A2ManHeroSection from "../../Elements/A2SalesReadyManpower/A2ManHero";
+import A2ManIntroSalesManpower from "../../Elements/A2SalesReadyManpower/A2ManIntro";
+import A2ManIntro2SalesReadyManpower from "../../Elements/A2SalesReadyManpower/A2ManIntro2";
+import A2ManRecruitmentMatrix from "../../Elements/A2SalesReadyManpower/A2ManMatrix";
+import A2ManHowItWorks from "../../Elements/A2SalesReadyManpower/A2ManHowItWork";
+import A2ManWhyChooseSalesSyllabus from "../../Elements/A2SalesReadyManpower/A2ManWhyChoose";
+import A2ManCallToActionSales from "../../Elements/A2SalesReadyManpower/A2ManCTA";
 
-const A2LeLearningCenter = () => {
+const A2SalesReadyManpower = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
 
@@ -56,13 +49,11 @@ const A2LeLearningCenter = () => {
   };
 
   const navLinks = [
-    { id: "intro1", label: "Introduction" },
-    { id: "intro", label: "Key Takeaways" },
-    { id: "content", label: "Our Approach" },
-    // { id: "steps", label: "Why attend this workshop ?" },
-    { id: "benefits", label: "Setup Process" },
-    { id: "premium-advantage", label: "Our Delivery Model" },
-    // { id: "positioning", label: "Contact Us" },
+    { id: "intro", label: "Who Should Attend ?" },
+    { id: "content", label: "Key Takeaways" },
+    { id: "steps", label: "Why attend this workshop ?" },
+    { id: "benefits", label: "Workshop Details" },
+    { id: "positioning", label: "Contact Us" },
   ];
 
   useEffect(() => {
@@ -124,34 +115,30 @@ const A2LeLearningCenter = () => {
         } lg:ml-40`}
       >
         <section id="hero">
-          <A2LeHeroSection/>
-        </section>
-        <section id="intro1">
-          <A2LeIntroLearningCentre />
+          <A2ManHeroSection />
         </section>
         <section id="intro">
-          <A2LeAboutSection />
+          <A2ManIntroSalesManpower />
         </section>
         <section id="content">
-          <A2LeCourseOfferings />
+          <A2ManIntro2SalesReadyManpower />
         </section>
-        {/* <section id="steps">
-          <A2LeadDataDrivenInsights/>
-        </section> */}
+        <section id="steps">
+          <A2ManRecruitmentMatrix/>
+        </section>
         <section id="benefits">
-          <A2LeWhyEnroll />
-        </section>
-        <section id="premium-advantage">
-          <A2LeDeliveryModel />
+          <A2ManHowItWorks />
         </section>
         <section id="positioning">
-          <A2LeCallToAction />
+          <A2ManWhyChooseSalesSyllabus />
         </section>
-      
+        <section id="premium-advantage">
+          <A2ManCallToActionSales />
+        </section>
         <FooterEl/>
       </main>
     </LayoutEl>
   );
 };
 
-export default A2LeLearningCenter;
+export default A2SalesReadyManpower;
