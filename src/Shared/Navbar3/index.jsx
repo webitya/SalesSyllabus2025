@@ -84,7 +84,7 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
           {/* Upper Section - Two Columns */}
           <div className="dropdown-upper">
             <div className="dropdown-column">
-              <h1>Research Services</h1>
+              <h1>Revenue Acceleration Consulting</h1>
               <NavLink to="/market-analysis" className="dropdown-item">Market Analysis</NavLink>
                 <NavLink to="/marketing-communication" className="dropdown-item">Marketing Communication Strategy</NavLink>
                 <NavLink to="/community-building" className="dropdown-item">Community Building</NavLink>

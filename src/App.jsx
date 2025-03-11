@@ -36,6 +36,7 @@ import A2InterviewService from "./Components/A2InterviewService";
 import A2WarRoom from "./Components/A2WarRoom";
 import A2LeadGeneration from "./Components/A2LeadsGeneraion";
 import A2AccountManagement from "./Components/A2AccManagement";
+import A2LeLearningCenter from "./Components/A2LearningCenter";
 
 
 const App=()=>{
@@ -66,6 +67,7 @@ const App=()=>{
           <Route path="/war-room" element={<A2WarRoom/>}/>
           <Route path="/lead-generation-process-setup" element={<A2LeadGeneration/>}/>
           <Route path="/strategic-account-management" element={<A2AccountManagement/>}/>
+          <Route path="/learning-center" element={<A2LeLearningCenter/>}/>
           {/* =============================================== */}
           <Route path="/blogs/sales-talent-management" element={<Blog1 />} />
           <Route path="/blogs/sales-hiring-challenges" element={<Blog2 />} />
