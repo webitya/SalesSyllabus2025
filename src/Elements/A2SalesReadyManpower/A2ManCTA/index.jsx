@@ -1,5 +1,6 @@
 import { Button } from "antd";
 import { PhoneOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 export default function A2ManCallToActionSales() {
   return (
@@ -11,13 +12,14 @@ export default function A2ManCallToActionSales() {
         Connect with our sales team to discuss your hiring needs and onboard 
         pre-trained, sales-ready professionals effortlessly.
       </p>
-      <Button
+    <Link to="https://calendly.com/salessyllabus" target="_blank">
+    <Button
         type="default"
         size="large"
         className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-md shadow-md flex items-center justify-center mx-auto hover:bg-gray-100"
       >
         <PhoneOutlined className="mr-2 text-lg" /> Contact Sales Team
-      </Button>
+      </Button></Link>
     </div>
   );
 }

@@ -57,12 +57,12 @@ const A2LeLearningCenter = () => {
 
   const navLinks = [
     { id: "intro1", label: "Introduction" },
-    { id: "intro", label: "Key Takeaways" },
-    { id: "content", label: "Our Approach" },
+    { id: "intro", label: "About" },
+    { id: "content", label: "Course Offering" },
     // { id: "steps", label: "Why attend this workshop ?" },
-    { id: "benefits", label: "Setup Process" },
-    { id: "premium-advantage", label: "Our Delivery Model" },
-    // { id: "positioning", label: "Contact Us" },
+    { id: "benefits", label: "Why Enroll" },
+    { id: "premium-advantage", label: "Our delivery model" },
+    { id: "positioning", label: "Contact Us" },
   ];
 
   useEffect(() => {

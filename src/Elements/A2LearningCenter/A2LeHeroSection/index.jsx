@@ -1,5 +1,6 @@
 import { Button } from "antd";
 import { PlayCircleOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 
 const HeroSection = () => {
@@ -13,9 +14,10 @@ const HeroSection = () => {
           Join our Learning Centre to gain practical insights and real-world strategies that help you reduce mistakes and achieve business growth.
         </p>
         <div className="mt-6 flex flex-col md:flex-row md:items-center gap-4">
+          <Link to="https://calendly.com/salessyllabus" target="_blank">
           <Button size="large" className="bg-white text-blue-600 font-semibold">
             Get Started
-          </Button>
+          </Button></Link>
           <Button  size="large" className=" border-white flex text-blue-700 items-center justify-center gap-2">
             <PlayCircleOutlined className="text-xl" /> Watch Intro
           </Button>

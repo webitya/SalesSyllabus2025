@@ -8,15 +8,13 @@ const reasons = [
 
 export default function A2LeWhyEnroll() {
   return (
-    <div className="py-12 bg-background px-4 md:px-12">
-      <h2 className="text-3xl font-bold text-center mb-8 text-primary">
-        Why Should Someone Enroll?
-      </h2>
-      <div className="max-w-3xl mx-auto space-y-4">
+    <div className="py-10 bg-gray-200 px-6 md:px-12 text-center">
+      <h2 className="text-3xl font-bold text-blue-700 mb-6">Why Enroll?</h2>
+      <div className="max-w-3xl mx-auto space-y-3">
         {reasons.map((reason, index) => (
-          <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm border border-border">
-            <CheckCircleOutlined className="text-xl text-primary" />
-            <p className="text-secondary font-medium">{reason}</p>
+          <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-lg shadow-md border border-gray-300">
+            <CheckCircleOutlined className="text-2xl text-blue-700" />
+            <p className="text-gray-800 font-medium">{reason}</p>
           </div>
         ))}
       </div>

@@ -1,3 +1,4 @@
+import SalesSyllabus from "../../Elements/A2Home/A23CardsSalesSyllabus";
 import A2Company from "../../Elements/A2Home/A2Company";
 import CallToActionA2 from "../../Elements/A2Home/A2CTA";
 import DataAnalysisComponent from "../../Elements/A2Home/A2FirstAnalytics";
@@ -44,11 +45,12 @@ const Homepage = () => {
         <A2Company />
         <A2SalesMarketingSection/>
         <A2ImpactSalesMarketingSection/>
-        <A2SalesExcellenceSection/>
-        <A2WarRoomSection/>
+        <SalesSyllabus/>
+        {/* <A2SalesExcellenceSection/> */}
+        {/* <A2WarRoomSection/> */}
         <A2SalesReadyTalentSection/>
         <A2MarketKnowledgeSection/>
-        <A2HomePhases/>
+        {/* <A2HomePhases/> */}
         {/* <LeadsSectionA2 /> */}
         {/* <InfographicSectionA2 /> */}
         {/* <div className="!p-5 mb-16" style={{ backgroundColor: "#F9FAFB" }}>
@@ -57,9 +59,9 @@ const Homepage = () => {
           <OptimizationGrowthComponent />
         </div> */}
        
-        <CallToActionA2 />
+        {/* <CallToActionA2 /> */}
         <PerformanceMixedChart />
-        <SalesSyllabusComponent/>
+        {/* <SalesSyllabusComponent/> */}
        
         <A2Testimonials />
         {/* <A2BusinessPackages /> */}

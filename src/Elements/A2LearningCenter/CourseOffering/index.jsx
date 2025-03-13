@@ -4,39 +4,35 @@ import { BookOutlined, TeamOutlined, CrownOutlined } from "@ant-design/icons";
 const courses = [
   {
     title: "Client-Facing Team Program",
-    icon: <BookOutlined className="text-4xl text-primary" />,
-    description: "12 online courses + 30+ business case studies",
+    icon: <BookOutlined className="text-4xl text-blue-800" />,
+    description: "12 structured courses + 30+ business case studies",
   },
   {
     title: "Team Managers Program",
-    icon: <TeamOutlined className="text-4xl text-secondary" />,
-    description: "15+ online courses + 30+ business case studies",
+    icon: <TeamOutlined className="text-4xl text-gray-700" />,
+    description: "15+ advanced courses + 30+ business case studies",
   },
   {
     title: "Leadership Program",
-    icon: <CrownOutlined className="text-4xl text-accent" />,
-    description: "Multiple courses covering various aspects of entrepreneurship",
+    icon: <CrownOutlined className="text-4xl text-yellow-600" />,
+    description: "Executive-level training on strategy & business growth",
   },
 ];
 
 export default function A2LeCourseOfferings() {
   return (
-    <div className="py-12 bg-background px-4 md:px-12">
-      <h2 className="text-3xl font-bold text-center mb-8 text-primary">
-        Course Offerings
-      </h2>
+    <div className="py-10 bg-gray-50 px-6 md:px-12 text-center">
+      <h2 className="text-3xl font-bold text-blue-900 mb-6">Course Offerings</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {courses.map((course, index) => (
           <Card
             key={index}
-            className="rounded-lg shadow-sm border border-border bg-white hover:shadow-md transition-all"
+            className="rounded-lg shadow-md border border-gray-300 bg-white hover:shadow-xl transition-all"
           >
-            <div className="flex flex-col items-center text-center p-4">
+            <div className="flex flex-col items-center text-center p-5">
               {course.icon}
-              <h3 className="text-lg font-medium text-secondary mt-4">
-                {course.title}
-              </h3>
-              <p className="text-muted mt-2">{course.description}</p>
+              <h3 className="text-lg font-semibold text-gray-900 mt-3">{course.title}</h3>
+              <p className="text-gray-700 mt-2">{course.description}</p>
             </div>
           </Card>
         ))}

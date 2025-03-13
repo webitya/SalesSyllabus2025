@@ -49,8 +49,9 @@ const A2SalesReadyManpower = () => {
   };
 
   const navLinks = [
-    { id: "intro", label: "Introduction" },
     { id: "content", label: "What ?" },
+    { id: "intro", label: "Introduction" },
+  
     { id: "steps", label: "Recruitment Matrix" },
     { id: "benefits", label: "How It Works" },
     { id: "positioning", label: "Why Choose" },
@@ -118,12 +119,13 @@ const A2SalesReadyManpower = () => {
         <section id="hero">
           <A2ManHeroSection />
         </section>
-        <section id="intro">
-          <A2ManIntroSalesManpower />
-        </section>
         <section id="content">
           <A2ManIntro2SalesReadyManpower />
         </section>
+        <section id="intro">
+          <A2ManIntroSalesManpower />
+        </section>
+       
         <section id="steps">
           <A2ManRecruitmentMatrix/>
         </section>
