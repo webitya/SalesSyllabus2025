@@ -1,12 +1,11 @@
 import { Card } from "antd";
-import { PhoneOutlined, GoogleOutlined, LinkedinOutlined, FacebookOutlined } from "@ant-design/icons";
+import { PhoneOutlined, GoogleOutlined } from "@ant-design/icons";
 import { motion } from "framer-motion";
 
 const steps = [
   { icon: <PhoneOutlined className="text-[#007BFF] text-2xl" />, title: "Traditional Marketing", description: "Inside Sales (Telemarketing) to engage potential customers directly." },
-  { icon: <GoogleOutlined className="text-[#007BFF] text-2xl" />, title: "Google Ads & SEO", description: "Drive traffic and capture leads through high-intent search queries." },
-  { icon: <LinkedinOutlined className="text-[#007BFF] text-2xl" />, title: "LinkedIn Ads", description: "Leverage professional networking for B2B lead generation." },
-  { icon: <FacebookOutlined className="text-[#007BFF] text-2xl" />, title: "Meta Ads", description: "Utilize Facebook and Instagram ads to reach a broader audience." },
+  { icon: <GoogleOutlined className="text-[#007BFF] text-2xl" />, title: "Digital Marketing", description: "Drive traffic and capture leads through LinkedIn Ads, Meta Ads, Google Ads" },
+ 
 ];
 
 const A2LeadGenerationProcess = () => {

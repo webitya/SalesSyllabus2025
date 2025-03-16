@@ -130,7 +130,7 @@ const LayoutEl = (data) => {
           onMouseEnter={(e) => (e.target.style.boxShadow = "0 0 15px rgba(0, 123, 255, 0.8)")}
           onMouseLeave={(e) => (e.target.style.boxShadow = "0 5px 15px rgba(0, 71, 171, 0.4)")}
         >
-          <AimOutlined className="pb-3"/>  Explore War Room
+          <AimOutlined className="pb-3"/> Book Appointment
         </Link>
       </motion.div>
       <A2PhaseModal visible={isModalVisible} onClose={() => setIsModalVisible(false)} />

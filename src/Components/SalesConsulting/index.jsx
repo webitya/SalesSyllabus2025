@@ -36,6 +36,7 @@ import CallToActionSection from "../../Elements/A2Sales/SalesCTA";
 import LayoutEl from "../../Shared/LayoutEl";
 import FooterEl from "../../Shared/FooterEl";
 import A2ActionableInsights from "../../Elements/A2Sales/A2ActionableInsights";
+import A2LeadDeliveryModels from "../../Elements/A2LeadGeneration/A2LeadModel";
 
 const SalesConsulting = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -60,6 +61,7 @@ const SalesConsulting = () => {
     { id: "key-deliverables", label: "Key Deliverables" },
     { id: "actionable-insights", label: "Actionable Insights" },
     { id: "why-choose", label: "Why Choose Sales Syllabus" },
+    { id: "premium-advantage1", label: "Our Delivery Model" },
     { id: "testimonials", label: "Testimonials" },
     { id: "cta", label: "Contact Us" },
   ];
@@ -137,6 +139,9 @@ const SalesConsulting = () => {
         </section>
         <section id="why-choose">
           <A2SalWhyChooseSalesSyllabus />
+        </section>
+        <section id="premium-advantage1">
+          <A2LeadDeliveryModels />
         </section>
         <section id="testimonials">
           <TestimonialsSection />

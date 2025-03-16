@@ -1,0 +1,30 @@
+.animated-border {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  .animated-border::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #BFDBFE, #BFDBFE);
+    border-radius: inherit;
+    z-index: -1;
+    animation: borderAnimation 9s infinite linear;
+  }
+  
+  
+  
+  @keyframes borderAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

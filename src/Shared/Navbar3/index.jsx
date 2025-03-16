@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "antd";
 import { Link, NavLink } from "react-router-dom";
-import { MenuOutlined, CloseOutlined, FormOutlined, DownOutlined } from "@ant-design/icons";
+import { MenuOutlined, CloseOutlined, FormOutlined, DownOutlined, AimOutlined } from "@ant-design/icons";
 import CustomDrawer from "../DrawerEl";
 import "./NavbarEl3.css";
 
@@ -26,6 +26,8 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [isResourcesOpen5, setIsResourcesOpen5] = useState(false);
+  const [showDescription, setShowDescription] = useState(false);
+  const [showDescription1, setShowDescription1] = useState(false);
   useEffect(() => {
     const handleScroll = () => setIsSticky(window.scrollY > 150);
     window.addEventListener("scroll", handleScroll);
@@ -79,28 +81,59 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
       </span>
       {isServicesOpen && (
         <div className="dropdown-menus">
-          {/* First Separator - Before Two-Column Section */}
-        
-          {/* Upper Section - Two Columns */}
           <div className="dropdown-upper">
             <div className="dropdown-column">
-              <h1>Revenue Acceleration Consulting</h1>	
-              <p className="text-sm text-zinc-400">All knowledge is derived from real-time experience and executed market data, ensuring fewer mistakes.</p>
+              <div className="relative w-fit">
+      <h1
+        className="text-xl font-semibold flex items-center gap-1 cursor-pointer"
+        onMouseEnter={() => setShowDescription(true)}
+        onMouseLeave={() => setShowDescription(false)}
+      >
+        Revenue Acceleration Consulting
+        <AimOutlined
+          className="text-gray-400 hover:text-gray-600 cursor-pointer"
+          onMouseEnter={() => setShowDescription(true)}
+          onMouseLeave={() => setShowDescription(false)}
+        />
+      </h1>
+      {showDescription && (
+        <p className="absolute mt-2 text-sm text-zinc-400 bg-white p-2 rounded-lg shadow-lg w-72">
+          All knowledge is derived from real-time experience and executed market data, ensuring fewer mistakes.
+        </p>
+      )}
+    </div>
               <NavLink to="/lead-generation-process-setup" className="dropdown-item">Lead Generation Process Set Up </NavLink>
               <NavLink to="/strategic-account-management" className="dropdown-item">Strategic account management</NavLink>
               <NavLink to="/market-analysis" className="dropdown-item">Market Analysis</NavLink>
                 <NavLink to="/marketing-communication" className="dropdown-item">Marketing Communication Strategy</NavLink>
                 <NavLink to="/community-building" className="dropdown-item">Community Building</NavLink>
-                
-
             </div>
             <hr className="dropdown-divider-1" />
             <div className="dropdown-column">
               <h1>Sales and marketing team Management solution </h1>
+              
+              <div className="relative w-fit">
+      <NavLink
+        to="/learning-centre"
+        className="dropdown-item flex items-center gap-1 text-blue-600 hover:text-blue-800"
+        onMouseEnter={() => setShowDescription1(true)}
+        onMouseLeave={() => setShowDescription1(false)}
+      >
+        Learning Centre
+        <AimOutlined
+          className="text-gray-400 hover:text-gray-600 cursor-pointer"
+          onMouseEnter={() => setShowDescription1(true)}
+          onMouseLeave={() => setShowDescription1(false)}
+        />
+      </NavLink>
+      {showDescription1 && (
+        <p className="absolute mt-2 text-sm text-zinc-400 bg-white p-2 rounded-lg shadow-lg w-72">
+          Knowledge hub with updated learning resources built with real market knowledge and insights.
+        </p>
+      )}
+    </div>
               <NavLink to="/war-room" className="dropdown-item">Sales & Marketing War Room</NavLink>
               <NavLink to="/Sales-framework" className="dropdown-item">Reporting Framework development </NavLink>
-              <NavLink to="/learning-centre" className="dropdown-item">Learning centre </NavLink>
-              <p className="text-sm text-zinc-400">Knowledge hub with updated learning resources built with real market knowledge and insights.</p>
             </div>
           </div>
 
@@ -111,8 +144,9 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
           <div className="dropdown-lower">
             <div className="dropdown-column">
               <h1>Sales team building solution </h1>
+              <NavLink to="/sales-ready-manpower" className="dropdown-item">Sales-Ready ManPower : Pre-Trained Talent for Your Organization</NavLink>
              <NavLink to="/leadership-hiring-and-mentoring" className="dropdown-item">Leadership Hiring & Mentoring</NavLink>
-             <NavLink to="/sales-ready-manpower" className="dropdown-item">Sales-Ready ManPower : Pre-Trained Talent for Your Organization</NavLink>
+             
                 <NavLink to="/master-class" className="dropdown-item">Master Class</NavLink>
                 <NavLink to="/interview" className="dropdown-item">Interview as a services</NavLink>
             </div>

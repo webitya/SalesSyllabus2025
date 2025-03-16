@@ -142,7 +142,7 @@ const HeroSectionA2 = () => {
           className="text-3xl md:text-3xl lg:text-3xl font-bold leading-tight tracking-wide opacity-95 text-white transition-transform duration-300"
           style={{ animation: "fadeIn 1.2s ease-in-out" }}
         >
-          Mastering Sales Success Through Knowledge & Execution
+          Mastering Sales & Marketing Success Through Knowledge & Execution
         </h1>
 
         {/* Subheading */}
@@ -150,7 +150,7 @@ const HeroSectionA2 = () => {
           className="text-base md:text-lg lg:text-xl font-medium opacity-95 text-white"
           style={{ animation: "fadeIn 1.5s ease-in-out" }}
         >
-          <span className='font-semibold'><sup></sup></span>Eliminate Sales & marketing Inefficiencies and Accelerate Revenue Growth with <span className='text-2xl text-blue-500'>Proven Market Insights & Sales-Ready Talent</span>
+          <span className='font-semibold'><sup></sup></span>Eliminate Sales & marketing Inefficiencies and Accelerate Revenue Growth with <span className='text-2xl text-white font-semibold'>Proven Market Insights & Sales-Ready Talent</span>
       .
         </p>
 

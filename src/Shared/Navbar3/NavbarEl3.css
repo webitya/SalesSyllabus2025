@@ -91,7 +91,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 600px;
-  height:600px;
+  height:500px;
   max-width: 90vw; /* Prevents overflow */
   transition: all 0.3s ease-in-out;
   padding-bottom:0px;

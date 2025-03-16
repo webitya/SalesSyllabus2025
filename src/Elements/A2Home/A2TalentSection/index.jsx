@@ -1,45 +1,20 @@
-import { UserOutlined, SolutionOutlined, RocketOutlined, BulbOutlined, CheckCircleOutlined } from "@ant-design/icons";
+import {  RocketOutlined, BulbOutlined, CheckCircleOutlined } from "@ant-design/icons";
 import { Card } from "antd";
 
 const SalesReadyTalent = () => {
   return (
-    <section className="bg-gray-50 py-20 px-6 md:px-12 text-gray-900">
+    <section className="bg-gray-50 py-12 px-6 md:px-12 text-gray-900">
       <div className=" mx-auto text-center">
-        <h2 className="text-3xl font-semibold text-blue-900 mb-4">
-          Sales-Ready Talent (Pre-Trained Sales Professionals)
-        </h2>
-        <p className="text text-gray-700 mb-6">
-          Hire industry-specific sales professionals trained on real-world strategies, ready to drive results from day one.
-        </p>
+       
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex items-center space-x-3 p-4 bg-white shadow-sm rounded-lg border border-gray-200">
-            <div className="bg-blue-600 p-3 rounded-full flex items-center justify-center">
-              <UserOutlined className="text-white text-lg" />
-            </div>
-            <div>
-              <h3 className="text font-medium text-gray-900">Pre-Trained & Industry-Ready Sales Talent</h3>
-              <p className="text text-gray-600">Skip the learning curve, start selling immediately.</p>
-            </div>
-          </div>
-          
-          <div className="flex items-center space-x-3 p-4 bg-white shadow-sm rounded-lg border border-gray-200">
-            <div className="bg-blue-600 p-3 rounded-full flex items-center justify-center">
-              <SolutionOutlined className="text-white text-lg" />
-            </div>
-            <div>
-              <h3 className="text font-medium text-gray-900">Sales Performance Support & Coaching</h3>
-              <p className="text text-gray-600">Continuous skill development for sustained success.</p>
-            </div>
-          </div>
-        </div>
+        
         {/* ==== */}
         
         <div className="flex justify-center items-center py-5">
       <Card
         className="w-full border border-gray-200"
         title={
-          <div className="text-center text-xl font-bold text-blue-900">
+          <div className="text-center text-xl font-bold text-blue-900 whitespace-normal ">
             <RocketOutlined className="text-blue-700 mr-2" /> Knowledge + Execution = 
             <span className="text-blue-700"> Revenue Success</span>
           </div>
