@@ -91,7 +91,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 600px;
-  height:470px;
+  height:600px;
   max-width: 90vw; /* Prevents overflow */
   transition: all 0.3s ease-in-out;
   padding-bottom:0px;
@@ -114,20 +114,20 @@ body {
   border: none;
   height: 2px;
   background: #ddd;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 .dropdown-divider-1{
   border: none;
   height:220px;
   width:2px;
   background: #ddd;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 /* Dropdown Columns */
 .dropdown-column {
   flex: 1;
   min-width: 250px;
-  padding: 20px;
+  padding: 6px;
 }
 
 /* Bold and Styled Section Headings */
@@ -135,15 +135,15 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #006CE7;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 /* Dropdown Items */
 .dropdown-item {
   display: block;
-  padding: 8px 0;
+  padding: 6px 0;
   text-decoration: none;
   color: #333;
   font-size: 14px;

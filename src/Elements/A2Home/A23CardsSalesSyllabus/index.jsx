@@ -1,16 +1,17 @@
-import { Card } from "antd";
+import { Button, Card } from "antd";
 import { CheckCircleOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const sections = [
   {
-    title: "Knowledge Consulting",
-    subtitle: "Revenue Acceleration Consulting",
+    title: "Learning Centre",
+    subtitle: "Build with real market knowledge and insights",
     description:
       "Gain deep industry insights for lead generation, Sales closures, and sales and marketing team management.",
     points: [
-      "Sales & Marketing Strategy Optimization – Develop proven, data-driven frameworks.",
-      "Lead-to-Closure Process Improvement – Refine every stage of your sales funnel.",
-      "Go-To-Market (GTM) Execution – Build precise strategies for market success.",
+      "Self-learning foundation courses – on sales and marketing.",
+      "Real-time business cases – to enhance industry understanding and best practices for sales and marketing.",
+      "Monthly updates – with new and relevant business case-based learning.",
     ],
   },
   {
@@ -36,38 +37,47 @@ const sections = [
   },
 ];
 
+const cardGradients = [
+  "bg-gradient-to-br from-blue-600 to-blue-400",
+  "bg-gradient-to-br from-blue-600 to-blue-400",
+  "bg-gradient-to-br from-blue-600 to-blue-400",
+];
+
 export default function SalesSyllabus() {
   return (
-    <div className="bg-gray-100 py-10 px-5 md:px-20">
-      <h1 className="text-3xl md:text-3xl font-bold text-center text-blue-600 mb-8">
-        Unlock Sales Excellence with Sales Syllabus
+    <div className="bg-gray-100 py-16 px-6 md:px-20">
+      <h1 className="text-3xl font-bold text-center text-blue-700 mb-12 tracking-wide">
+        Unlock Sales Excellence
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {sections.map((section, index) => (
           <Card
             key={index}
-            className="rounded-2xl shadow-lg border-blue-500 hover:shadow-xl transition-all min-w-[300px]"
+            className={`rounded-3xl shadow-xl border-none overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl ${cardGradients[index % cardGradients.length]}`}
             title={
-              <div>
-                <h2 className="text-xl font-semibold text-blue-700 break-words whitespace-normal">
-                  {section.title}
-                </h2>
-                <h3 className="text-md font-medium text-gray-600 break-words whitespace-normal">
-                  {section.subtitle}
-                </h3>
+              <div className="text-white">
+                <h2 className="text-2xl ">{section.title}</h2>
+                <h3 className="text font-medium opacity-90 break-words whitespace-normal">{section.subtitle}</h3>
               </div>
             }
           >
-            <p className="text-gray-700 mb-4 md:whitespace-normal">
-              {section.description}
-            </p>
-            <ul className="space-y-2">
-              {section.points.map((point, idx) => (
-                <li key={idx} className="flex items-center gap-2 text-gray-900">
-                  <CheckCircleOutlined className="text-green-500" /> {point}
-                </li>
-              ))}
-            </ul>
+            <div className="text-white flex flex-col justify-between h-full">
+              <div>
+                <p className="text-md mb-4 opacity-90">{section.description}</p>
+                <ul className="space-y-2">
+                  {section.points.map((point, idx) => (
+                    <li key={idx} className="flex items-center gap-3">
+                      <CheckCircleOutlined className="text-white bg-blue-700 rounded-full p-1 text-lg" /> {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-6">
+                <Link to="https://calendly.com/salessyllabus" target="_blank">
+                  <Button className="bg-white text-blue-700 hover:text-blue-900">Book Appointment</Button>
+                </Link>
+              </div>
+            </div>
           </Card>
         ))}
       </div>

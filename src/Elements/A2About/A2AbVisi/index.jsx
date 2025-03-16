@@ -62,7 +62,8 @@ const AboutOurVision = () => {
         <Col xs={24} lg={12} className="space-y-2">
           <h2 className="text-3xl text-gray-800 mb-2">Our Vision</h2>
           <p className="text-base md:text-lg text-gray-700 mb-6">
-          We aim to revolutionize sales and marketing operations by embedding a data analysis  mindset into management practices. Our goal is to empower organizations to minimize mistakes and achieve sustained sales and marketing success.
+         
+          We aim to revolutionize sales and marketing operations by empowering organizations with real market knowledge, insights and trained manpower in sales and marketing. Our goal is to help organizations minimize mistakes and achieve sustained sales and marketing success.
 
           </p>
           {/* <h2 className="text-3xl text-gray-800 mt-2">Our Approach</h2>

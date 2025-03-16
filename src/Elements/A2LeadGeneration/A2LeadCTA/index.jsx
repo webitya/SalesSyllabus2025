@@ -28,7 +28,7 @@ const A2GetStartedSection = () => {
             },
             {
               icon: <TeamOutlined className="text-[#007BFF] text-3xl mb-4" />,
-              title: "Join Our Knowledge Cohort",
+              title: "Join Our Knowledge Transfer",
               description: "Empower your team with proven strategies and frameworks.",
             },
             {

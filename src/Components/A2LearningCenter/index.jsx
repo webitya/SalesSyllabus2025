@@ -37,6 +37,7 @@ import A2LeWhyEnroll from "../../Elements/A2LearningCenter/A2LeWhyChoose";
 import A2LeDeliveryModel from "../../Elements/A2LearningCenter/A2LeDeliveryModel";
 import A2LeCallToAction from "../../Elements/A2LearningCenter/A2LeCTA";
 import A2LeIntroLearningCentre from "../../Elements/A2LearningCenter/A2LeIntro";
+import A2LeDeliveryModel01 from "../../Elements/A2LearningCenter/A2LeDeliveryModelDesc";
 
 const A2LeLearningCenter = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -61,7 +62,8 @@ const A2LeLearningCenter = () => {
     { id: "content", label: "Course Offering" },
     // { id: "steps", label: "Why attend this workshop ?" },
     { id: "benefits", label: "Why Enroll" },
-    { id: "premium-advantage", label: "Our delivery model" },
+    { id: "premium-advantage01", label: "Our delivery model" },
+    { id: "premium-advantage", label: "Learning Structure" },
     { id: "positioning", label: "Contact Us" },
   ];
 
@@ -140,6 +142,9 @@ const A2LeLearningCenter = () => {
         </section> */}
         <section id="benefits">
           <A2LeWhyEnroll />
+        </section>
+        <section id="premium-advantage01">
+          <A2LeDeliveryModel01 />
         </section>
         <section id="premium-advantage">
           <A2LeDeliveryModel />

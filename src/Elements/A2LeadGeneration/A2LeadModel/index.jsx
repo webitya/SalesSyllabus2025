@@ -11,7 +11,7 @@ const deliveryModels = [
   },
   {
     icon: <BookOutlined className="text-[#007BFF] text-4xl" />,
-    title: "Knowledge Transfer Cohort",
+    title: "Knowledge Transfer",
     description:
       "We empower your internal team through a structured cohort, providing expert-led training sessions, actionable frameworks & insights, and hands-on guidance for process implementation. This ensures your team gains the expertise to sustain and optimize lead generation efforts independently.",
   },

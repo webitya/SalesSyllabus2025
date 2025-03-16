@@ -53,7 +53,7 @@ const A2AccDeliveryModels = () => {
         >
           <Card className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
             <h3 className="text-2xl font-semibold text-[#1E3A5F] mb-4">
-              2. Knowledge Transfer Cohort
+              2. Knowledge Transfer
             </h3>
             <p className="text-gray-600 mb-4">
               A cohort-based learning experience that empowers your sales representatives with:

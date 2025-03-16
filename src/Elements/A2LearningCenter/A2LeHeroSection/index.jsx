@@ -11,7 +11,7 @@ const HeroSection = () => {
           Empower Your Sales & Marketing Success
         </h1>
         <p className="mt-4 text-lg md:text-xl">
-          Join our Learning Centre to gain practical insights and real-world strategies that help you reduce mistakes and achieve business growth.
+          Join our Learning Centre to gain practical insights and real-world strategies that help you to readuce costly sales and marketing mistakes and achieve business growth.
         </p>
         <div className="mt-6 flex flex-col md:flex-row md:items-center gap-4">
           <Link to="https://calendly.com/salessyllabus" target="_blank">

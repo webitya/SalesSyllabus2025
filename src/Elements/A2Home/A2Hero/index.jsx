@@ -150,8 +150,8 @@ const HeroSectionA2 = () => {
           className="text-base md:text-lg lg:text-xl font-medium opacity-95 text-white"
           style={{ animation: "fadeIn 1.5s ease-in-out" }}
         >
-          <span className='font-semibold'><sup></sup></span>Eliminate Sales Inefficiencies & Accelerate Revenue Growth with Proven Market Insights & Sales-Ready Talent
-          functions.
+          <span className='font-semibold'><sup></sup></span>Eliminate Sales & marketing Inefficiencies and Accelerate Revenue Growth with <span className='text-2xl text-blue-500'>Proven Market Insights & Sales-Ready Talent</span>
+      .
         </p>
 
         {/* Call to Action Button */}

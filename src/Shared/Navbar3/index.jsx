@@ -84,19 +84,23 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
           {/* Upper Section - Two Columns */}
           <div className="dropdown-upper">
             <div className="dropdown-column">
-              <h1>Revenue Acceleration Consulting</h1>
+              <h1>Revenue Acceleration Consulting</h1>	
+              <p className="text-sm text-zinc-400">All knowledge is derived from real-time experience and executed market data, ensuring fewer mistakes.</p>
+              <NavLink to="/lead-generation-process-setup" className="dropdown-item">Lead Generation Process Set Up </NavLink>
+              <NavLink to="/strategic-account-management" className="dropdown-item">Strategic account management</NavLink>
               <NavLink to="/market-analysis" className="dropdown-item">Market Analysis</NavLink>
                 <NavLink to="/marketing-communication" className="dropdown-item">Marketing Communication Strategy</NavLink>
                 <NavLink to="/community-building" className="dropdown-item">Community Building</NavLink>
-                <NavLink to="/Sales-framework" className="dropdown-item">Reporting Framework Developement</NavLink>
+                
 
             </div>
             <hr className="dropdown-divider-1" />
             <div className="dropdown-column">
-              <h1>Sales Team Building</h1>
-              <NavLink to="/leadership-hiring-and-mentoring" className="dropdown-item">Leadership Hiring & Mentoring</NavLink>
-                <NavLink to="/master-class" className="dropdown-item">Master Class</NavLink>
-                <NavLink to="/interview" className="dropdown-item">Interview as a services</NavLink>
+              <h1>Sales and marketing team Management solution </h1>
+              <NavLink to="/war-room" className="dropdown-item">Sales & Marketing War Room</NavLink>
+              <NavLink to="/Sales-framework" className="dropdown-item">Reporting Framework development </NavLink>
+              <NavLink to="/learning-centre" className="dropdown-item">Learning centre </NavLink>
+              <p className="text-sm text-zinc-400">Knowledge hub with updated learning resources built with real market knowledge and insights.</p>
             </div>
           </div>
 
@@ -106,11 +110,11 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
           {/* Lower Section - Single Column */}
           <div className="dropdown-lower">
             <div className="dropdown-column">
-              <h1>Sales Team Management Service</h1>
-              <NavLink to="/war-room" className="dropdown-item">Sales & Marketing War Room</NavLink>
-              <NavLink to="/lead-generation-process-setup" className="dropdown-item">Lead Generation Process Setup</NavLink>
-              <NavLink to="/strategic-account-management" className="dropdown-item">Strategic account management</NavLink>
-             
+              <h1>Sales team building solution </h1>
+             <NavLink to="/leadership-hiring-and-mentoring" className="dropdown-item">Leadership Hiring & Mentoring</NavLink>
+             <NavLink to="/sales-ready-manpower" className="dropdown-item">Sales-Ready ManPower : Pre-Trained Talent for Your Organization</NavLink>
+                <NavLink to="/master-class" className="dropdown-item">Master Class</NavLink>
+                <NavLink to="/interview" className="dropdown-item">Interview as a services</NavLink>
             </div>
           </div>
         </div>

@@ -68,7 +68,7 @@ const App=()=>{
           <Route path="/war-room" element={<A2WarRoom/>}/>
           <Route path="/lead-generation-process-setup" element={<A2LeadGeneration/>}/>
           <Route path="/strategic-account-management" element={<A2AccountManagement/>}/>
-          <Route path="/learning-center" element={<A2LeLearningCenter/>}/>
+          <Route path="/learning-centre" element={<A2LeLearningCenter/>}/>
           <Route path="/sales-ready-manpower" element={<A2SalesReadyManpower/>}/>
           {/* =============================================== */}
           <Route path="/blogs/sales-talent-management" element={<Blog1 />} />

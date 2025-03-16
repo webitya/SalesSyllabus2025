@@ -18,28 +18,30 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
       label: "Services",
       submenu: [
         {
-          label: "Research Services",
+          label: "Revenue Acceleration Consulting",
           submenu: [
+            { label: "Lead Generation Process Set Up ", href: "/lead-generation-process-setup" },
+            { label: " Strategic account management", href: "/strategic-account-management" },
             { label: "Market Analysis", href: "/market-analysis" },
-            { label: " Marketing Communication Strategy", href: "/marketing-communication" },
-            { label: "Community Building", href: "/community-building" },
-            { label: "Reporting Framework Developement", href: "/Sales-framework" },
+            { label: "Marketing Communication Strategy", href: "/marketing-communication" },
+            { label: "Community Building", href: "/community-building" }
           ],
         },
         {
-          label: "Sales Team Building",
-          submenu: [
-            { label: "Leadership Hiring & Mentoring", href: "/leadership-hiring-and-mentoring" },
-            { label: "Master Class", href: "/master-class" },
-            { label: "Interview as a services", href: "/interview" },
-          ],
-        },
-        {
-          label: "Sales Team Management Service",
+          label: "Sales and marketing team Management solution",
           submenu: [
             { label: "Sales & Marketing War Room", href: "/war-room" },
-            { label: "Lead generation process setup", href: "/lead-generation-process-setup" },
-            { label: "Strategic account management", href: "/strategic-account-management" },
+            { label: "Reporting Framework development", href: "/Sales-framework" },
+            { label: "Learning centre", href: "/learning-centre" },
+          ],
+        },
+        {
+          label: "Sales team building solution",
+          submenu: [
+            { label: "Leadership Hiring & Mentoring", href: "/leadership-hiring-and-mentoring" },
+            { label: "Sales-Ready ManPower : Pre-Trained Talent for Your Organization", href: "/sales-ready-manpower" },
+            { label: "Master Class", href: "/master-class" },
+            { label: "Interview as a services", href: "/interview" },
           ],
         },
       ],

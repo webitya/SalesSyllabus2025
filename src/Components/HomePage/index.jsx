@@ -6,6 +6,7 @@ import OptimizationGrowthComponent from "../../Elements/A2Home/A2FirstGrowth";
 import BuildingStrategyComponent from "../../Elements/A2Home/A2FirstStrategy";
 
 import HeroSectionA2 from "../../Elements/A2Home/A2Hero";
+import A2HeroContactSectionNew from "../../Elements/A2Home/A2HeroContactNew";
 import A2HomePhases from "../../Elements/A2Home/A2HomePhases";
 
 import InfographicSectionA2 from "../../Elements/A2Home/A2Info";
@@ -66,6 +67,7 @@ const Homepage = () => {
         <A2Testimonials />
         {/* <A2BusinessPackages /> */}
         <HomeFAQSection />
+        <A2HeroContactSectionNew/>
         <FooterEl/>
       </LayoutEl>
     </>
