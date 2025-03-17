@@ -7,7 +7,7 @@ export default function A2HeroContactSectionNew() {
     <div className="bg-blue-600 text-white text-center py-12 px-6">
       <h2 className="text-3xl font-bold mb-4">Contact Us Today</h2>
       <p className="text-lg mb-6">
-        Let’s build your sales success with real-world insights and execution-driven consulting.
+        Let’s build your sales success with real-world insights and sales ready talent.
       </p>
       <div className="flex justify-center gap-4">
         <Link to="https://calendly.com/salessyllabus" target="_blank">

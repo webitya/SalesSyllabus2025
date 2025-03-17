@@ -32,9 +32,9 @@ const sections = [
     description:
       "Hire industry-specific sales professionals trained on real-world strategies, ready to drive results from day one.",
     points: [
-      "Pre-Trained & Industry-Ready Sales Talent – Skip the learning curve, start selling immediately.",
-      "Sales Performance Support & Coaching – Continuous skill development for sustained success.",
-      "We empower working professionals to be highly productive through learning based on proven marketing and sales strategies"
+      "Pre-Trained & Ready Sales Talent – Skip the learning curve, start selling immediately.",
+      "Sales Performance Support & Coaching – Continuous skill development .",
+      "We empower working professionals  through learning based on proven strategies"
     ],
   },
 ];

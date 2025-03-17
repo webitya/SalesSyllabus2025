@@ -11,15 +11,13 @@ const HomeFAQSection = () => {
     },
     {
       question: "How do I get started?",
-      answer: "Get started by booking a meeting with us. During this session, we’ll use data science to analyze key performance indicators, identify areas for improvement, and uncover opportunities for building and managing sales and marketing team"
+      answer: "Contact us and tell us the area of improvement , we will suggest the best suitable solution "
     },
     {
       question: "What makes your process different?",
       answer: (
         <>
-          We have developed our proprietary marketing framework, Sales Syllabus Pro, based on insights gained from working with
-300+ clients. This framework enables organizations to prioritize high-value customers by building and managing high performing sales and marketing teams. Sales Syllabus Pro accelerates decision-making by reducing problem-solving time
-by 90% through real-time reporting, delivering precise insights at every level ofthe hierarchy.
+         Our mission is to minimize costly trial-and-error in sales and marketing. We conduct in-depth market research and analysis to identify patterns of success and failure, enabling us to recommend low-risk, high-impact sales and marketing models for our clients
 
         </>
       ),

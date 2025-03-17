@@ -23,7 +23,7 @@ const FAQPageEl = () => {
             className="bg-blue-50"
           >
             <p className="text-base">
-            We provide revenue generation consulting, pre-trained sales and marketing professionals, and specialized courses tailored for all levels of the sales and marketing hierarchy.I.
+            We provide revenue generation consulting, pre-trained sales and marketing professionals, and specialized courses tailored for all levels of the sales and marketing hierarchy.
 
 
             </p>
