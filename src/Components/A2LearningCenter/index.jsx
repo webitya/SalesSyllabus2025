@@ -38,6 +38,7 @@ import A2LeDeliveryModel from "../../Elements/A2LearningCenter/A2LeDeliveryModel
 import A2LeCallToAction from "../../Elements/A2LearningCenter/A2LeCTA";
 import A2LeIntroLearningCentre from "../../Elements/A2LearningCenter/A2LeIntro";
 import A2LeDeliveryModel01 from "../../Elements/A2LearningCenter/A2LeDeliveryModelDesc";
+import A2LeContinuousLearningProgram from "../../Elements/A2LearningCenter/A2LeContinuousLearning";
 
 const A2LeLearningCenter = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -59,8 +60,8 @@ const A2LeLearningCenter = () => {
   const navLinks = [
     { id: "intro1", label: "Introduction" },
     { id: "intro", label: "About" },
-    { id: "content", label: "Course Offering" },
-    // { id: "steps", label: "Why attend this workshop ?" },
+    { id: "content", label: "Foundation Program" },
+    { id: "steps", label: "Continuous Learning Program" },
     { id: "benefits", label: "Why Enroll" },
     { id: "premium-advantage01", label: "Our delivery model" },
     { id: "premium-advantage", label: "Learning Structure" },
@@ -137,9 +138,9 @@ const A2LeLearningCenter = () => {
         <section id="content">
           <A2LeCourseOfferings />
         </section>
-        {/* <section id="steps">
-          <A2LeadDataDrivenInsights/>
-        </section> */}
+        <section id="steps">
+          <A2LeContinuousLearningProgram/>
+        </section>
         <section id="benefits">
           <A2LeWhyEnroll />
         </section>

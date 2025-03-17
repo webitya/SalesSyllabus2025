@@ -11,7 +11,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #BFDBFE, #BFDBFE);
+    background: linear-gradient(45deg, #bfdbfed7, #bfdbfed3);
     border-radius: inherit;
     z-index: -1;
     animation: borderAnimation 9s infinite linear;

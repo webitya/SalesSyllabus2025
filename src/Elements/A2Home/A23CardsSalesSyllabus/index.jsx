@@ -34,6 +34,7 @@ const sections = [
     points: [
       "Pre-Trained & Industry-Ready Sales Talent – Skip the learning curve, start selling immediately.",
       "Sales Performance Support & Coaching – Continuous skill development for sustained success.",
+      "We empower working professionals to be highly productive through learning based on proven marketing and sales strategies"
     ],
   },
 ];
@@ -41,7 +42,7 @@ const sections = [
 export default function SalesSyllabus() {
   return (
     <div className="bg-gray-50 py-16 px-6 md:px-20">
-      <h1 className="text-4xl font-bold text-center text-blue-700 mb-12 tracking-wide">
+      <h1 className="text-4xl font-bold text-center text-blue-900 mb-12 tracking-wide">
         Unlock Sales Excellence
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

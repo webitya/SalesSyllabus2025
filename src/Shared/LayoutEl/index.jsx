@@ -105,7 +105,7 @@ const LayoutEl = (data) => {
         }}
       >
         <Link
-          to="/war-room"
+          to="https://calendly.com/salessyllabus" target="_blank"
           style={{
             background: "linear-gradient(135deg, #0047AB, #007BFF)",
             color: "white",
@@ -133,7 +133,7 @@ const LayoutEl = (data) => {
           <AimOutlined className="pb-3"/> Book Appointment
         </Link>
       </motion.div>
-      <A2PhaseModal visible={isModalVisible} onClose={() => setIsModalVisible(false)} />
+      {/* <A2PhaseModal visible={isModalVisible} onClose={() => setIsModalVisible(false)} /> */}
     </>
   );
 };

@@ -21,8 +21,12 @@ const courses = [
 
 export default function A2LeCourseOfferings() {
   return (
-    <div className="py-10 bg-gray-50 px-6 md:px-12 text-center">
-      <h2 className="text-3xl font-bold text-blue-900 mb-6">Course Offerings</h2>
+    <div className="py-10 bg-blue-50 px-6 md:px-12 text-center">
+      <h2 className="text-3xl font-bold text-blue-900 mb-6">Foundation Course Offering</h2>
+      
+      <p className="text-lg text-gray-600 my-5">
+      Designed for marketing and sales professionals at all levels, this program provides real-world insights and best practices to enhance expertise and execution.
+        </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {courses.map((course, index) => (
           <Card

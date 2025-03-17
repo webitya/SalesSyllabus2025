@@ -11,16 +11,18 @@ const HeroSection = () => {
           Empower Your Sales & Marketing Success
         </h1>
         <p className="mt-4 text-lg md:text-xl">
-          Join our Learning Centre to gain practical insights and real-world strategies that help you to readuce costly sales and marketing mistakes and achieve business growth.
+          Join our Learning Centre to gain practical insights and real-world strategies that help you to reduce costly sales and marketing mistakes and achieve business growth.
         </p>
         <div className="mt-6 flex flex-col md:flex-row md:items-center gap-4">
           <Link to="https://calendly.com/salessyllabus" target="_blank">
           <Button size="large" className="bg-white text-blue-600 font-semibold">
             Get Started
           </Button></Link>
-          <Button  size="large" className=" border-white flex text-blue-700 items-center justify-center gap-2">
+         <Link to="https://youtu.be/etodEF4nVTI?si=LDC69meGr_LxgaWk" target="_blank">
+         <Button  size="large" className=" border-white flex text-blue-700 items-center justify-center gap-2">
             <PlayCircleOutlined className="text-xl" /> Watch Intro
           </Button>
+         </Link>
         </div>
       </div>
       <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
