@@ -60,11 +60,12 @@ const A2LeLearningCenter = () => {
   const navLinks = [
     { id: "intro1", label: "Introduction" },
     { id: "intro", label: "About" },
-    { id: "content", label: "Foundation Program" },
-    { id: "steps", label: "Continuous Learning Program" },
+    { id: "premium-advantage", label: "Types Of Learning Proogram" },
+    // { id: "content", label: "Foundation Program" },
+    // { id: "steps", label: "Continuous Learning Program" },
     { id: "benefits", label: "Why Enroll" },
-    { id: "premium-advantage01", label: "Our delivery model" },
-    { id: "premium-advantage", label: "Learning Structure" },
+    // { id: "premium-advantage01", label: "Our delivery model" },
+    
     { id: "positioning", label: "Contact Us" },
   ];
 
@@ -135,21 +136,22 @@ const A2LeLearningCenter = () => {
         <section id="intro">
           <A2LeAboutSection />
         </section>
-        <section id="content">
+        {/* <section id="content">
           <A2LeCourseOfferings />
+        </section> */}
+        <section id="premium-advantage">
+          <A2LeDeliveryModel />
         </section>
-        <section id="steps">
+        {/* <section id="steps">
           <A2LeContinuousLearningProgram/>
-        </section>
+        </section> */}
         <section id="benefits">
           <A2LeWhyEnroll />
         </section>
         <section id="premium-advantage01">
           <A2LeDeliveryModel01 />
         </section>
-        <section id="premium-advantage">
-          <A2LeDeliveryModel />
-        </section>
+   
         <section id="positioning">
           <A2LeCallToAction />
         </section>
