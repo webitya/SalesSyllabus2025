@@ -14,6 +14,7 @@ const sections = [
       "Real-time business cases to enhance industry understanding and best practices.",
       "Monthly updates with new and relevant business case-based learning.",
     ],
+    link: "/learning-centre",
   },
   {
     title: "War Room",
@@ -25,6 +26,7 @@ const sections = [
       "Problem Discussion Platform – Access to top leadership talent.",
       "Tactical Sales Playbooks – Execute winning strategies for different scenarios.",
     ],
+    link: "/war-room",
   },
   {
     title: "Sales-Ready Talent",
@@ -32,10 +34,11 @@ const sections = [
     description:
       "Hire industry-specific sales professionals trained on real-world strategies, ready to drive results from day one.",
     points: [
-      "Pre-Trained & Ready Sales Talent – Skip the learning curve, start selling immediately.",
-      "Sales Performance Support & Coaching – Continuous skill development .",
-      "We empower working professionals  through learning based on proven strategies"
+      "Pre-Trained & Ready Sales Talent – Skip the learning curve, start selling immediately.",
+      "Sales Performance Support & Coaching – Continuous skill development.",
+      "We empower working professionals through learning based on proven strategies.",
     ],
+    link: "/sales-ready-manpower",
   },
 ];
 
@@ -69,9 +72,9 @@ export default function SalesSyllabus() {
                 </ul>
               </div>
               <div className="mt-6">
-                <Link to="https://calendly.com/salessyllabus" target="_blank">
+                <Link to={section.link} target="_blank">
                   <Button className="bg-blue-600 text-white hover:bg-blue-700 transition-all px-6 py-2 rounded-lg">
-                    Book Appointment
+                    Know More
                   </Button>
                 </Link>
               </div>
