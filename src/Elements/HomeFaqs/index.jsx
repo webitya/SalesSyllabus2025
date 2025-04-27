@@ -6,39 +6,25 @@ const HomeFAQSection = () => {
 
   const faqs = [
     {
-      question: "What value sales syllabus is adding ?",
-      answer: "Sales syllabus provides  real world knowledge and market insights to business to excel in sales and marketing . This enables business to do less mistakes "
+      question: "What makes Sales Syllabus different from a recruitment agency?",
+      answer: "We don’t just fill positions — we build performing revenue teams using strategic insights, training, and culture alignment."
     },
     {
-      question: "How do I get started?",
-      answer: "Contact us and tell us the area of improvement , we will suggest the best suitable solution "
+      question: "How fast can we start seeing results?",
+      answer: "You receive your Culture Mapping Report within 7 days. Candidate shortlists begin in week two."
     },
     {
-      question: "What makes your process different?",
-      answer: (
-        <>
-         Our mission is to minimize costly trial-and-error in sales and marketing. We conduct in-depth market research and analysis to identify patterns of success and failure, enabling us to recommend low-risk, high-impact sales and marketing models for our clients
-
-        </>
-      ),
-    },
-    
-    {
-      question: "Can I integrate your services with our existing systems?",
-      answer: "Yes, our services are designed to integrate seamlessly with your existing systems. We offer flexible solutions that can be customized to fit your specific needs and ensure smooth integration."
+      question: "What roles can you help us hire?",
+      answer: "Sales Heads, Business Heads, Sales Managers, BDRs, Marketing Strategists, Performance Marketers, Digital Campaign Managers, and more."
     },
     {
-      question: "Do you provide ongoing support?",
-      answer: "Yes, we provide assistance through our dedicated support desk"
+      question: "What happens if a hire doesn’t work out?",
+      answer: "We offer a 90-day replacement if the candidate leaves on their own."
     },
     {
-      question: "How do I get started?",
-      answer: "Contact us and tell us the area of improvement , we will suggest the best suitable solution "
-    },
-    {
-      question: "What makes your process different?",
-      answer: "Our mission is to minimize costly trial-and-error in sales and marketing. We conduct in-depth market research and analysis to identify patterns of success and failure, enabling us to recommend low-risk, high-impact sales and marketing models for our clients"
-    },
+      question: "Do you also help with ongoing prospecting and outreach?",
+      answer: "Yes. Our ABM support team helps you identify, engage, and nurture B2B prospects through manual, personalized email outreach. This allows your sales team to focus on converting — not chasing."
+    }
   ];
 
   const toggleOpen = (index) => {
@@ -46,26 +32,32 @@ const HomeFAQSection = () => {
   };
 
   return (
-    <div className="faq-section" style={{ width: '100%', padding: '50px 20px' }}>
-      <h2 style={{ textAlign: 'center', fontSize: '24px', marginBottom: '20px' }}>Frequently Asked Questions</h2>
-      {faqs.map((faq, index) => (
-        <div key={index} style={{ width: '100%', padding: '10px 0', borderBottom: '1px solid #ccc' }}>
-          <div
-            style={{ display: 'flex', justifyContent: 'space-between', cursor: 'pointer' }}
-            onClick={() => toggleOpen(index)}
+    <div className="faq-section w-full py-16 px-6 bg-white text-gray-800">
+      <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+      
+      <div className=" mx-auto space-y-6">
+        {faqs.map((faq, index) => (
+          <div 
+            key={index}
+            className="border-b border-gray-300 pb-4"
           >
-            <h3 style={{ fontSize: '18px', margin: 0 }}>{faq.question}</h3>
-            <div style={{ fontSize: '18px' }}>
-              {openIndex === index ? <MinusOutlined /> : <PlusOutlined />}
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => toggleOpen(index)}
+            >
+              <h3 className="text-lg font-semibold">{faq.question}</h3>
+              <div className="text-xl">
+                {openIndex === index ? <MinusOutlined /> : <PlusOutlined />}
+              </div>
             </div>
+            {openIndex === index && (
+              <div className="mt-4 text-gray-600">
+                <p>{faq.answer}</p>
+              </div>
+            )}
           </div>
-          {openIndex === index && (
-            <div style={{ marginTop: '10px', fontSize: '16px' }}>
-              <p>{faq.answer}</p>
-            </div>
-          )}
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

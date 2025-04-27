@@ -7,6 +7,7 @@ import BuildingStrategyComponent from "../../Elements/A2Home/A2FirstStrategy";
 
 import HeroSectionA2 from "../../Elements/A2Home/A2Hero";
 import A2HeroContactSectionNew from "../../Elements/A2Home/A2HeroContactNew";
+import HeroSectionNew2025 from "../../Elements/A2Home/A2HeroNew2025";
 import A2HomePhases from "../../Elements/A2Home/A2HomePhases";
 
 import InfographicSectionA2 from "../../Elements/A2Home/A2Info";
@@ -22,6 +23,10 @@ import A2Testimonials from "../../Elements/A2Home/A2Testimonial";
 import LeadsSectionA2 from "../../Elements/A2Home/A2Vetices";
 import A2WarRoomSection from "../../Elements/A2Home/A2WarRoomSection";
 import SalesSyllabusComponent from "../../Elements/A2Home/SalesSyllabusComponent";
+import A2NewHomeExecutionProcess from "../../Elements/A2NewHome/A2NewHExecutionProcess";
+import A2NewHomeTypesOfHiring from "../../Elements/A2NewHome/A2NewHomeHiring";
+import A2NewHomeWhoWe from "../../Elements/A2NewHome/A2NewHomeWho";
+import A2NewHomeRevenueTeamFramework from "../../Elements/A2NewHome/A2NewHRevenueTeam";
 
 import HomeFAQSection from "../../Elements/HomeFaqs";
 
@@ -33,7 +38,8 @@ const Homepage = () => {
   const display = (
     <>
       <LayoutEl>
-        <HeroSectionA2 />
+        {/* <HeroSectionA2 /> */}
+        <HeroSectionNew2025/>
         {/* <div className="w-full py-8 px-4 lg:px-24 bg-white shadow-lg rounded-lg">
   <h2 className="text-3xl font-semibold text-center text-gray-900 mb-4 tracking-wide">
     What is Sales Syllabus?
@@ -44,13 +50,17 @@ const Homepage = () => {
 </div> */}
 
         <A2Company />
-        <A2SalesMarketingSection/>
-        <A2ImpactSalesMarketingSection/>
-        <SalesSyllabus/>
+        <A2NewHomeWhoWe/>
+        <A2NewHomeRevenueTeamFramework/>
+        <A2NewHomeExecutionProcess/>
+        <A2NewHomeTypesOfHiring/>
+        {/* <A2SalesMarketingSection/> */}
+        {/* <A2ImpactSalesMarketingSection/> */}
+        {/* <SalesSyllabus/> */}
         {/* <A2SalesExcellenceSection/> */}
         {/* <A2WarRoomSection/> */}
-        <A2SalesReadyTalentSection/>
-        <A2MarketKnowledgeSection/>
+        {/* <A2SalesReadyTalentSection/> */}
+        {/* <A2MarketKnowledgeSection/> */}
         {/* <A2HomePhases/> */}
         {/* <LeadsSectionA2 /> */}
         {/* <InfographicSectionA2 /> */}
@@ -61,7 +71,7 @@ const Homepage = () => {
         </div> */}
        
         {/* <CallToActionA2 /> */}
-        <PerformanceMixedChart />
+        {/* <PerformanceMixedChart /> */}
         {/* <SalesSyllabusComponent/> */}
        
         <A2Testimonials />
