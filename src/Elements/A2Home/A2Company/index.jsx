@@ -63,7 +63,7 @@ const A2Company = () => {
   };
 
   return (
-    <div className="trusted-companies-wrapper py-6 pb-10 bg-gradient-to-r from-blue-800 to-gray-700">
+    <div className="trusted-companies-wrapper py-6 pb-10 bg-gradient-to-r from-blue-800 to-blue-800">
       <h1 className="trusted-title text-3xl lg:text-4xl font-bold text-center text-white mb-4">
         Trusted by 100+ Leading Companies
       </h1>

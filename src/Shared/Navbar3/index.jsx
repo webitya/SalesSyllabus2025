@@ -12,6 +12,7 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
   const menus = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about-us" },
+    { label: "Services", href: "/services" },
     // { label: "Market Analysis", href: "/market-analysis" },
     // { label: "Marketing Communication", href: "/marketing-communication" },
     // { label: "Content Marketing ", href: "/content-marketing" },
@@ -77,7 +78,7 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
       onMouseLeave={() => setIsServicesOpen(false)}
     >
       <span className="navlink" style={{ fontWeight: "normal", textDecoration: "none" }}>
-        Services <DownOutlined style={{ fontSize: "14px" }} />
+        All Services <DownOutlined style={{ fontSize: "14px" }} />
       </span>
       {isServicesOpen && (
         <div className="dropdown-menus">
@@ -131,7 +132,7 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
           Knowledge hub with updated learning resources built with real market knowledge and insights.
         </p>
       )}
-    </div>
+    </div>    <NavLink to="/academy" className="dropdown-item">Academy</NavLink>
               <NavLink to="/war-room" className="dropdown-item">Sales & Marketing War Room</NavLink>
               <NavLink to="/Sales-framework" className="dropdown-item">Reporting Framework development </NavLink>
             </div>
@@ -149,6 +150,7 @@ const [isServicesOpen, setIsServicesOpen] = useState(false)
              
                 <NavLink to="/master-class" className="dropdown-item">Master Class</NavLink>
                 <NavLink to="/interview" className="dropdown-item">Interview as a services</NavLink>
+                <NavLink to="/Marketing-support" className="dropdown-item">Marketing Support</NavLink>
             </div>
           </div>
         </div>

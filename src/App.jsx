@@ -38,6 +38,9 @@ import A2LeadGeneration from "./Components/A2LeadsGeneraion";
 import A2AccountManagement from "./Components/A2AccManagement";
 import A2LeLearningCenter from "./Components/A2LearningCenter";
 import A2SalesReadyManpower from "./Components/A2SalesReadyManpower";
+import A2ServicePage from "./Components/A2ServicePage";
+import A2MarketingSupport from "./Components/A2MarketingSupport";
+import A2AcademyPage from "./Components/A2AcademyPage";
 
 
 const App=()=>{
@@ -52,6 +55,9 @@ const App=()=>{
           <Route path="/faqs" element={<Faqs/>}/>
           <Route path="/blog" element={<Blogs/>}/>
           <Route path="/case-studies" element={<CaseStudies/>}/>
+          <Route path="/services" element={<A2ServicePage/>}/>
+          <Route path="/marketing-support" element={<A2MarketingSupport/>}/>
+          <Route path="/academy" element={<A2AcademyPage/>}/>
           {/* ============S E R V I C E S =====================*/}
           <Route path="/market-analysis" element={<BusinessPlanning />} />{/*Market Analysis */}
           <Route path="/content-marketing" element={<PerformanceMarketing />} />{/*Performance Marketing */}

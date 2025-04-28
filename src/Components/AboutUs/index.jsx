@@ -45,6 +45,8 @@ import LayoutEl from "../../Shared/LayoutEl";
 import FooterEl from "../../Shared/FooterEl";
 import A2OurStrengths from "../../Elements/A2About/A2OurStrength";
 import A2OurServicesSection from "../../Elements/A2About/A2OurServices";
+import A2AbWhatWeDoNutshell from "../../Elements/A2About/A2AbWhatWeDoNutshell";
+import A2AbWhoWeWorkWith from "../../Elements/A2About/A2AbWhoWeWorkWith";
 
 const AboutUs = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -144,6 +146,8 @@ const AboutUs = () => {
         <section id="our-vision">
           <AboutOurVision />
           <A2OurStrengths/>
+          <A2AbWhatWeDoNutshell/>
+          <A2AbWhoWeWorkWith/>
         </section>
         <section id="our-services">
           <A2OurServicesSection/>

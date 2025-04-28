@@ -13,9 +13,11 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
   const navigationLinks = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about-us" },
+    { label: "Services", href: "/services" },
     { label: "Contact Us", href: "/contact-us" },
+    
     {
-      label: "Services",
+      label: "All Services",
       submenu: [
         {
           label: "Revenue Acceleration Consulting",
@@ -33,6 +35,7 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
             { label: "Sales & Marketing War Room", href: "/war-room" },
             { label: "Reporting Framework development", href: "/Sales-framework" },
             { label: "Learning centre", href: "/learning-centre" },
+            { label: "Academy", href: "/academy" },
           ],
         },
         {
@@ -42,6 +45,7 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
             { label: "Sales-Ready ManPower : Pre-Trained Talent for Your Organization", href: "/sales-ready-manpower" },
             { label: "Master Class", href: "/master-class" },
             { label: "Interview as a services", href: "/interview" },
+            { label: "Marketing Support", href: "/marketing-support" },
           ],
         },
       ],

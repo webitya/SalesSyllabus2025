@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { Row, Col, Spin } from 'antd';
 import 'tailwindcss/tailwind.css';
-import "./A2AbVisi.css"
+import "./A2AbVisi.css"; // Keep your custom CSS here
 
 const ApexChart = lazy(() => import('react-apexcharts'));
 
@@ -19,37 +19,26 @@ const chartOptions = {
           show: true, 
           fontSize: '18px', 
           offsetY: -10, 
-          color: '#4A4A4A', 
+          color: '#4A4A4A',
         },
         value: { 
           show: true, 
-          fontSize: '20px', 
+          fontSize: '24px', 
           offsetY: 10, 
-          color: '#38bdf8', 
+          color: '#007B82', 
+          fontWeight: 'bold',
         },
       },
     },
   },
-  labels: ['Future Growth'],
-  colors: ['#38bdf8'], // Accent color for radial bar
+  labels: ['Growth Focus'],
+  colors: ['#007B82'],
   stroke: {
     lineCap: 'round',
     width: 5,
   },
-  title: {
-    text: 'Growth Potential',
-    align: 'center',
-    style: {
-      fontSize: '20px',
-      color: '#4A4A4A',
-      fontWeight: 'bold',
-    },
-  },
   tooltip: {
     theme: 'light',
-    x: {
-      show: true,
-    },
   },
 };
 
@@ -57,31 +46,41 @@ const chartSeries = [90];
 
 const AboutOurVision = () => {
   return (
-    <section className="w-full py-20 bg-gradient-to-r from-blue-50 to-indigo-50 font-premium">
-      <Row gutter={[32, 32]} className="flex items-start mx-auto px-4 lg:px-12">
-        <Col xs={24} lg={12} className="space-y-2">
-          <h2 className="text-3xl text-gray-800 mb-2">Our Vision</h2>
-          <p className="text-base md:text-lg text-gray-700 mb-6">
-         
-          We aim to revolutionize sales and marketing operations by empowering organizations with real market knowledge, insights and trained manpower in sales and marketing. Our goal is to help organizations minimize mistakes and achieve sustained sales and marketing success.
+    <section className="relative w-full py-24 bg-gradient-to-br from-blue-50 via-white to-indigo-100 overflow-hidden">
 
+      {/* Decorative Top Divider */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-indigo-200 to-transparent"></div>
+
+      <Row gutter={[48, 48]} className="flex items-center mx-auto px-6 lg:px-20 relative z-10">
+
+        {/* Left: Vision Content */}
+        <Col xs={24} lg={12} className="space-y-6 animate-fade-in-left">
+          {/* <h2 className="text-5xl font-extrabold text-gray-800 mb-4 leading-tight">Our Vision</h2> */}
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight">
+                Our Vision
+              </h2>
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            To empower every business to build performing sales and marketing teams that fuel predictable, sustainable growth.
           </p>
-          {/* <h2 className="text-3xl text-gray-800 mt-2">Our Approach</h2>
-          <p className="text-base md:text-lg text-gray-700 mb-6">
-          We follow a data-driven methodology, breaking down the entire process into smaller, structured segments
-and aligning them with sales and marketing goals. This approach allows us to identify and resolve
-challenges 90% faster; ensuring organizations operate with greater efficiency and precision
-          </p> */}
-          {/* <ul className="list-disc pl-6 text-base md:text-lg   text-gray-700 space-y-2" style={{fontSize:"18px"}}>
-            <li>Streamlined processes for peak performance.</li>
-            <li>Data-backed strategies for informed decision-making.</li>
-            <li>A unified team culture driven by measurable outcomes.</li>
-          </ul> */}
+
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            We believe great growth doesn’t come from theory or luck — it comes from:
+          </p>
+
+          <ul className="list-disc pl-6 text-lg md:text-xl text-gray-700 space-y-3">
+            <li>The right people</li>
+            <li>The right mindset and skills</li>
+            <li>Working under the right structure and strategy</li>
+          </ul>
+
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            We’re here to help companies build that system — with less trial-and-error, and more clarity, speed, and precision.
+          </p>
         </Col>
 
-        {/* Right Column: Radial Chart */}
-        <Col xs={24} lg={12} className="flex justify-center">
-          <div className="w-full bg-white p-8 rounded-lg shadow-xl">
+        {/* Right: Chart */}
+        <Col xs={24} lg={12} className="flex justify-center animate-fade-in-right">
+          <div className="w-full max-w-md p-8 rounded-2xl bg-white/50 backdrop-blur-md shadow-2xl border border-gray-200">
             <Suspense fallback={<Spin size="large" />}>
               <ApexChart
                 options={chartOptions}
@@ -92,6 +91,7 @@ challenges 90% faster; ensuring organizations operate with greater efficiency an
             </Suspense>
           </div>
         </Col>
+
       </Row>
     </section>
   );

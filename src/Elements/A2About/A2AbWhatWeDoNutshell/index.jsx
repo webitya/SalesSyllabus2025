@@ -1,9 +1,9 @@
 import React from 'react';
-import { CheckOutlined } from '@ant-design/icons';
 import { Row, Col } from 'antd';
+import { CheckOutlined } from '@ant-design/icons';
 import 'tailwindcss/tailwind.css';
 
-const A2WhatWeDo = () => {
+const A2AbWhatWeDoNutshell = () => {
   const services = [
     {
       title: "Sales & Marketing Hiring",
@@ -38,7 +38,7 @@ const A2WhatWeDo = () => {
   ];
 
   return (
-    <section className="w-full py-16 bg-gradient-to-r from-gray-50 to-blue-50 font-premium">
+    <section className="w-full bg-gradient-to-r from-blue-50 to-indigo-50 py-16 font-premium">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
@@ -49,13 +49,13 @@ const A2WhatWeDo = () => {
         <Row gutter={[24, 24]}>
           {services.map((service, index) => (
             <Col xs={24} md={12} key={index}>
-              <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all h-full">
+              <div className="bg-white p-6 rounded-xl shadow-md h-full hover:shadow-lg transition-shadow duration-300">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   {service.title}
                 </h3>
                 <ul className="space-y-2">
                   {service.points.map((point, idx) => (
-                    <li key={idx} className="flex items-start text-gray-700 text-base">
+                    <li key={idx} className="flex items-start text-gray-700 text-sm">
                       <CheckOutlined className="text-blue-500 mr-2 pt-1" />
                       <span>{point}</span>
                     </li>
@@ -70,4 +70,4 @@ const A2WhatWeDo = () => {
   );
 };
 
-export default A2WhatWeDo;
+export default A2AbWhatWeDoNutshell;
