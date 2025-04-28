@@ -29,7 +29,7 @@ const SalesSyllabusComponent = () => {
         {/* Image Section */}
         <div className="lg:w-1/2 flex justify-center">
           <motion.img
-            src="/heroabt.webp"  // Replace with the actual path to your image
+            src="/homeab2.png"  // Replace with the actual path to your image
             alt="Sales Expertise"
             className="w-full max-w-md rounded-lg shadow-lg"
             initial={{ opacity: 0 }}
